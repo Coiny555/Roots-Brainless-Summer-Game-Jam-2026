@@ -1,0 +1,1318 @@
+fileFormatVersion: 2
+guid: de2a6ed666152d140916f3c3b6ff704f
+timeCreated: 1530561048
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MasterDetialOrtho_Sheet4of4_0
+    21300002: MasterDetialOrtho_Sheet4of4_1
+    21300004: MasterDetialOrtho_Sheet4of4_2
+    21300006: MasterDetialOrtho_Sheet4of4_3
+    21300008: MasterDetialOrtho_Sheet4of4_4
+    21300010: MasterDetialOrtho_Sheet4of4_5
+    21300012: MasterDetialOrtho_Sheet4of4_6
+    21300014: MasterDetialOrtho_Sheet4of4_7
+    21300016: MasterDetialOrtho_Sheet4of4_8
+    21300018: MasterDetialOrtho_Sheet4of4_9
+    21300020: MasterDetialOrtho_Sheet4of4_10
+    21300022: MasterDetialOrtho_Sheet4of4_11
+    21300024: MasterDetialOrtho_Sheet4of4_12
+    21300026: MasterDetialOrtho_Sheet4of4_13
+    21300028: MasterDetialOrtho_Sheet4of4_14
+    21300030: MasterDetialOrtho_Sheet4of4_15
+    21300032: MasterDetialOrtho_Sheet4of4_16
+    21300034: MasterDetialOrtho_Sheet4of4_17
+    21300036: MasterDetialOrtho_Sheet4of4_18
+    21300038: MasterDetialOrtho_Sheet4of4_19
+    21300040: MasterDetialOrtho_Sheet4of4_20
+    21300042: MasterDetialOrtho_Sheet4of4_21
+    21300044: MasterDetialOrtho_Sheet4of4_22
+    21300046: MasterDetialOrtho_Sheet4of4_23
+    21300048: MasterDetialOrtho_Sheet4of4_24
+    21300050: MasterDetialOrtho_Sheet4of4_25
+    21300052: MasterDetialOrtho_Sheet4of4_26
+    21300054: MasterDetialOrtho_Sheet4of4_27
+    21300056: MasterDetialOrtho_Sheet4of4_28
+    21300058: MasterDetialOrtho_Sheet4of4_29
+    21300060: MasterDetialOrtho_Sheet4of4_30
+    21300062: MasterDetialOrtho_Sheet4of4_31
+    21300064: MasterDetialOrtho_Sheet4of4_32
+    21300066: MasterDetialOrtho_Sheet4of4_33
+    21300068: MasterDetialOrtho_Sheet4of4_34
+    21300070: MasterDetialOrtho_Sheet4of4_35
+    21300072: MasterDetialOrtho_Sheet4of4_36
+    21300074: MasterDetialOrtho_Sheet4of4_37
+    21300076: MasterDetialOrtho_Sheet4of4_38
+    21300078: MasterDetialOrtho_Sheet4of4_39
+    21300080: MasterDetialOrtho_Sheet4of4_40
+    21300082: MasterDetialOrtho_Sheet4of4_41
+    21300084: MasterDetialOrtho_Sheet4of4_42
+    21300086: MasterDetialOrtho_Sheet4of4_43
+    21300088: MasterDetialOrtho_Sheet4of4_44
+    21300090: MasterDetialOrtho_Sheet4of4_45
+    21300092: MasterDetialOrtho_Sheet4of4_46
+    21300094: MasterDetialOrtho_Sheet4of4_47
+    21300096: MasterDetialOrtho_Sheet4of4_48
+    21300098: MasterDetialOrtho_Sheet4of4_49
+    21300100: MasterDetialOrtho_Sheet4of4_50
+    21300102: MasterDetialOrtho_Sheet4of4_51
+    21300104: MasterDetialOrtho_Sheet4of4_52
+    21300106: MasterDetialOrtho_Sheet4of4_53
+    21300108: MasterDetialOrtho_Sheet4of4_54
+    21300110: MasterDetialOrtho_Sheet4of4_55
+    21300112: MasterDetialOrtho_Sheet4of4_56
+    21300114: MasterDetialOrtho_Sheet4of4_57
+    21300116: MasterDetialOrtho_Sheet4of4_58
+    21300118: MasterDetialOrtho_Sheet4of4_59
+    21300120: MasterDetialOrtho_Sheet4of4_60
+    21300122: MasterDetialOrtho_Sheet4of4_61
+    21300124: MasterDetialOrtho_Sheet4of4_62
+    21300126: MasterDetialOrtho_Sheet4of4_63
+    21300128: MasterDetialOrtho_Sheet4of4_64
+    21300130: MasterDetialOrtho_Sheet4of4_65
+    21300132: MasterDetialOrtho_Sheet4of4_66
+    21300134: MasterDetialOrtho_Sheet4of4_67
+    21300136: MasterDetialOrtho_Sheet4of4_68
+    21300138: MasterDetialOrtho_Sheet4of4_69
+    21300140: MasterDetialOrtho_Sheet4of4_70
+    21300142: MasterDetialOrtho_Sheet4of4_71
+    21300144: MasterDetialOrtho_Sheet4of4_72
+    21300146: MasterDetialOrtho_Sheet4of4_73
+    21300148: MasterDetialOrtho_Sheet4of4_74
+    21300150: MasterDetialOrtho_Sheet4of4_75
+    21300152: MasterDetialOrtho_Sheet4of4_76
+    21300154: MasterDetialOrtho_Sheet4of4_77
+    21300156: MasterDetialOrtho_Sheet4of4_78
+    21300158: MasterDetialOrtho_Sheet4of4_79
+    21300160: MasterDetialOrtho_Sheet4of4_80
+    21300162: MasterDetialOrtho_Sheet4of4_81
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_0
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 6578
+        width: 959
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_1
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 6663
+        width: 1412
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_2
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6649
+        width: 1030
+        height: 1025
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_3
+      rect:
+        serializedVersion: 2
+        x: 4233
+        y: 6618
+        width: 760
+        height: 1348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_4
+      rect:
+        serializedVersion: 2
+        x: 5177
+        y: 6846
+        width: 402
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_5
+      rect:
+        serializedVersion: 2
+        x: 5877
+        y: 6799
+        width: 82
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_6
+      rect:
+        serializedVersion: 2
+        x: 6082
+        y: 6829
+        width: 82
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_7
+      rect:
+        serializedVersion: 2
+        x: 6265
+        y: 6829
+        width: 82
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_8
+      rect:
+        serializedVersion: 2
+        x: 6439
+        y: 6819
+        width: 82
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_9
+      rect:
+        serializedVersion: 2
+        x: 6701
+        y: 6643
+        width: 441
+        height: 808
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_10
+      rect:
+        serializedVersion: 2
+        x: 7409
+        y: 7000
+        width: 305
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 5534
+        width: 443
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_12
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 5591
+        width: 441
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_13
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 5558
+        width: 426
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_14
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 5529
+        width: 746
+        height: 950
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_15
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 5563
+        width: 744
+        height: 950
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_16
+      rect:
+        serializedVersion: 2
+        x: 3791
+        y: 5528
+        width: 748
+        height: 950
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_17
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 5596
+        width: 772
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_18
+      rect:
+        serializedVersion: 2
+        x: 5857
+        y: 5723
+        width: 424
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_19
+      rect:
+        serializedVersion: 2
+        x: 6444
+        y: 5617
+        width: 707
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_20
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 3970
+        width: 770
+        height: 1437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_21
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 3902
+        width: 752
+        height: 1439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_22
+      rect:
+        serializedVersion: 2
+        x: 4967
+        y: 5199
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_23
+      rect:
+        serializedVersion: 2
+        x: 5744
+        y: 5240
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_24
+      rect:
+        serializedVersion: 2
+        x: 6551
+        y: 5301
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_25
+      rect:
+        serializedVersion: 2
+        x: 7266
+        y: 5250
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_26
+      rect:
+        serializedVersion: 2
+        x: 5764
+        y: 4974
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_27
+      rect:
+        serializedVersion: 2
+        x: 6581
+        y: 5056
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_28
+      rect:
+        serializedVersion: 2
+        x: 7266
+        y: 5036
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_29
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 4094
+        width: 791
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_30
+      rect:
+        serializedVersion: 2
+        x: 3851
+        y: 4198
+        width: 797
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_31
+      rect:
+        serializedVersion: 2
+        x: 4993
+        y: 4309
+        width: 574
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_32
+      rect:
+        serializedVersion: 2
+        x: 5764
+        y: 4749
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_33
+      rect:
+        serializedVersion: 2
+        x: 6561
+        y: 4831
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_34
+      rect:
+        serializedVersion: 2
+        x: 7302
+        y: 4760
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_35
+      rect:
+        serializedVersion: 2
+        x: 6482
+        y: 4336
+        width: 402
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_36
+      rect:
+        serializedVersion: 2
+        x: 7287
+        y: 4524
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_37
+      rect:
+        serializedVersion: 2
+        x: 6044
+        y: 4276
+        width: 196
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_38
+      rect:
+        serializedVersion: 2
+        x: 7328
+        y: 4320
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_39
+      rect:
+        serializedVersion: 2
+        x: 7307
+        y: 4085
+        width: 574
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_40
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 3253
+        width: 558
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_41
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 3136
+        width: 435
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_42
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 3038
+        width: 411
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_43
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 3064
+        width: 565
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_44
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 3391
+        width: 499
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_45
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 2874
+        width: 162
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_46
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 2863
+        width: 162
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_47
+      rect:
+        serializedVersion: 2
+        x: 3966
+        y: 2884
+        width: 162
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_48
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 3360
+        width: 436
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_49
+      rect:
+        serializedVersion: 2
+        x: 5143
+        y: 3415
+        width: 364
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_50
+      rect:
+        serializedVersion: 2
+        x: 5806
+        y: 3417
+        width: 411
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_51
+      rect:
+        serializedVersion: 2
+        x: 6443
+        y: 3435
+        width: 425
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_52
+      rect:
+        serializedVersion: 2
+        x: 7156
+        y: 3371
+        width: 243
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_53
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 2784
+        width: 436
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_54
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 2941
+        width: 236
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_55
+      rect:
+        serializedVersion: 2
+        x: 4840
+        y: 2941
+        width: 276
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_56
+      rect:
+        serializedVersion: 2
+        x: 5251
+        y: 2949
+        width: 210
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_57
+      rect:
+        serializedVersion: 2
+        x: 6050
+        y: 2868
+        width: 684
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_58
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2029
+        width: 574
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_59
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 2122
+        width: 416
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_60
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 2193
+        width: 435
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_61
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2183
+        width: 513
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_62
+      rect:
+        serializedVersion: 2
+        x: 3658
+        y: 2193
+        width: 472
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_63
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 2123
+        width: 1347
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_64
+      rect:
+        serializedVersion: 2
+        x: 6072
+        y: 2527
+        width: 744
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_65
+      rect:
+        serializedVersion: 2
+        x: 7117
+        y: 2146
+        width: 519
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_66
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 2051
+        width: 427
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_67
+      rect:
+        serializedVersion: 2
+        x: 6072
+        y: 2250
+        width: 744
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_68
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1042
+        width: 349
+        height: 791
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_69
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1016
+        width: 329
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_70
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 947
+        width: 348
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_71
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1109
+        width: 539
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_72
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 1084
+        width: 330
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_73
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 1206
+        width: 359
+        height: 710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_74
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 1170
+        width: 379
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_75
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 1115
+        width: 379
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_76
+      rect:
+        serializedVersion: 2
+        x: 5092
+        y: 1088
+        width: 490
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_77
+      rect:
+        serializedVersion: 2
+        x: 5819
+        y: 1061
+        width: 526
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_78
+      rect:
+        serializedVersion: 2
+        x: 6662
+        y: 1134
+        width: 526
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_79
+      rect:
+        serializedVersion: 2
+        x: 7392
+        y: 1163
+        width: 490
+        height: 729
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_80
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 75
+        width: 821
+        height: 816
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MasterDetialOrtho_Sheet4of4_81
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 75
+        width: 432
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

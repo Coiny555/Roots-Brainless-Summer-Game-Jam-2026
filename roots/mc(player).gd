@@ -1,6 +1,8 @@
-extends Sprite2D
+extends CharacterBody2D
 
 @export var speed = 400
+
+@onready var _animated_sprite = $AnimatedSprite2D
 
 var screen_size
 
@@ -14,14 +16,18 @@ func _process(delta: float) -> void:
 	
 	if (Input.is_action_pressed("move_left")):
 		velocity.x -= speed
-	if (Input.is_action_pressed("move_right")):
+		_animated_sprite.play("walk")
+	elif (Input.is_action_pressed("move_right")):
 		velocity.x += speed
-	if (Input.is_action_pressed("move_up")):
+		_animated_sprite.play("walk")
+	elif (Input.is_action_pressed("move_up")):
 		velocity.y -= 1
-	if (Input.is_action_pressed("move_down")):
+		_animated_sprite.play("walk")
+	elif (Input.is_action_pressed("move_down")):
 		velocity.y += 1
-		
-		
+		_animated_sprite.play("walk")
+	else:
+		_animated_sprite.play("idle")
 	
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed 

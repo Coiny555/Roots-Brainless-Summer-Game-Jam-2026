@@ -1,12 +1,4476 @@
 [gd_scene format=3 uid="uid://ok5n004vqro0"]
 
-[ext_resource type="Texture2D" uid="uid://caetb64ncpg0s" path="res://art_assets/Mc.png" id="1_x3g6e"]
+[ext_resource type="Texture2D" uid="uid://2j6y8jg8lhni" path="res://art_assets/Animation/idle_1_1.png" id="2_5xdti"]
 [ext_resource type="Script" uid="uid://cevtjfajglt4t" path="res://mc(player).gd" id="2_x3g6e"]
+[ext_resource type="Texture2D" uid="uid://douttct8gdb1a" path="res://art_assets/SpritePack_Mixed/Master_SpritePack_Split/slice_2_2.png" id="3_30lbi"]
+[ext_resource type="Texture2D" uid="uid://cvvaexyr2eyfx" path="res://art_assets/Animation/walk_1_1.png" id="3_otot6"]
+[ext_resource type="Texture2D" uid="uid://nwsjp3vacrx8" path="res://art_assets/Animation/walk_1_2.png" id="4_uv5p5"]
+[ext_resource type="Texture2D" uid="uid://bbv172tgm5fue" path="res://art_assets/Animation/walk_1_3.png" id="5_ehxob"]
+[ext_resource type="Texture2D" uid="uid://cagpgiwydhq67" path="res://art_assets/Animation/walk_1_4.png" id="6_3q4dw"]
+[ext_resource type="Texture2D" uid="uid://vfigbwicvc2e" path="res://art_assets/SpritePack_Mixed/Master_SpritePack_Split/slice_1_11.png" id="8_uv5p5"]
+[ext_resource type="Texture2D" uid="uid://c0jj831rsloyc" path="res://art_assets/SpritePack_Mixed/Master_SpritePack_Split/slice_1_12.png" id="9_ehxob"]
 
-[node name="Node2D" type="Node2D" unique_id=684493179]
+[sub_resource type="SpriteFrames" id="SpriteFrames_30lbi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5xdti")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_otot6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uv5p5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ehxob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3q4dw")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 10.0
+}]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=208491819]
-position = Vector2(453.25003, 393.5)
-scale = Vector2(0.2402344, 0.23515625)
-texture = ExtResource("1_x3g6e")
+[node name="Forest" type="Node2D" unique_id=684493179]
+
+[node name="Mc" type="CharacterBody2D" parent="." unique_id=938260914]
+z_index = 2
+position = Vector2(562, 337.00003)
+scale = Vector2(0.1, 0.098)
 script = ExtResource("2_x3g6e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Mc" unique_id=1477942801]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_30lbi")
+animation = &"idle"
+
+[node name="Stuff_In_Forest" type="Node2D" parent="." unique_id=465000195]
+
+[node name="Grass" type="Sprite2D" parent="Stuff_In_Forest" unique_id=267751380]
+z_index = 1
+position = Vector2(650, 412)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass26" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1951002543]
+z_index = 1
+position = Vector2(724, 455)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass7" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1825483303]
+z_index = 1
+position = Vector2(581, 452)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass27" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1691116024]
+z_index = 1
+position = Vector2(650, 500)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass10" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1210962489]
+z_index = 1
+position = Vector2(514, 496)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass28" type="Sprite2D" parent="Stuff_In_Forest" unique_id=769735784]
+z_index = 1
+position = Vector2(578, 541)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass4" type="Sprite2D" parent="Stuff_In_Forest" unique_id=853840660]
+position = Vector2(655, 328)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass2" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1615775975]
+position = Vector2(722, 367)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass25" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1780082892]
+position = Vector2(793, 411)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass33" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2043713636]
+z_index = 1
+position = Vector2(792, 490)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass34" type="Sprite2D" parent="Stuff_In_Forest" unique_id=62563822]
+z_index = 1
+position = Vector2(718, 535)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass35" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1459139419]
+position = Vector2(861, 446)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass36" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1814796434]
+z_index = 1
+position = Vector2(792, 490)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass37" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1668076721]
+z_index = 1
+position = Vector2(718, 535)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass38" type="Sprite2D" parent="Stuff_In_Forest" unique_id=617447085]
+position = Vector2(861, 446)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass3" type="Sprite2D" parent="Stuff_In_Forest" unique_id=195968031]
+position = Vector2(580, 370)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass8" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1899645913]
+position = Vector2(514, 413)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass11" type="Sprite2D" parent="Stuff_In_Forest" unique_id=908307952]
+position = Vector2(441, 450)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass5" type="Sprite2D" parent="Stuff_In_Forest" unique_id=91359516]
+z_index = -1
+position = Vector2(581, 286)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass140" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2016162581]
+z_index = -1
+position = Vector2(581, 286)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass6" type="Sprite2D" parent="Stuff_In_Forest" unique_id=853649406]
+z_index = -1
+position = Vector2(512, 324)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass9" type="Sprite2D" parent="Stuff_In_Forest" unique_id=220190180]
+z_index = -1
+position = Vector2(442, 366)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass12" type="Sprite2D" parent="Stuff_In_Forest" unique_id=204625889]
+z_index = -1
+position = Vector2(366, 406)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass13" type="Sprite2D" parent="Stuff_In_Forest" unique_id=294480348]
+z_index = 1
+position = Vector2(443, 536)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass29" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1934926978]
+z_index = 1
+position = Vector2(512, 584)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass14" type="Sprite2D" parent="Stuff_In_Forest" unique_id=19463833]
+position = Vector2(370, 490)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass15" type="Sprite2D" parent="Stuff_In_Forest" unique_id=961616026]
+z_index = -1
+position = Vector2(295, 446)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass16" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1409059516]
+z_index = 1
+position = Vector2(369, 576)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass30" type="Sprite2D" parent="Stuff_In_Forest" unique_id=898360615]
+z_index = 1
+position = Vector2(440, 623)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass17" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1099985356]
+position = Vector2(296, 530)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass18" type="Sprite2D" parent="Stuff_In_Forest" unique_id=123850764]
+z_index = -1
+position = Vector2(221, 486)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass19" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1072533102]
+z_index = 1
+position = Vector2(295, 620)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass31" type="Sprite2D" parent="Stuff_In_Forest" unique_id=276914400]
+z_index = 1
+position = Vector2(361, 664)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass20" type="Sprite2D" parent="Stuff_In_Forest" unique_id=192213998]
+position = Vector2(222, 574)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass21" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2071544058]
+z_index = -1
+position = Vector2(147, 530)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass22" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2057021262]
+z_index = 1
+position = Vector2(220, 663)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass32" type="Sprite2D" parent="Stuff_In_Forest" unique_id=220619156]
+z_index = 1
+position = Vector2(290, 711)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass39" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1322239483]
+z_index = 1
+position = Vector2(650, 579)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass40" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1723912918]
+z_index = 1
+position = Vector2(584, 622)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass41" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1412137405]
+z_index = 1
+position = Vector2(512, 661)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass42" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1837728746]
+z_index = 1
+position = Vector2(433, 702)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass43" type="Sprite2D" parent="Stuff_In_Forest" unique_id=633875208]
+z_index = 1
+position = Vector2(362, 749)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass44" type="Sprite2D" parent="Stuff_In_Forest" unique_id=34504972]
+z_index = 1
+position = Vector2(860, 531)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass45" type="Sprite2D" parent="Stuff_In_Forest" unique_id=112222417]
+z_index = 1
+position = Vector2(786, 576)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass46" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1511642162]
+position = Vector2(929, 487)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass47" type="Sprite2D" parent="Stuff_In_Forest" unique_id=713913965]
+z_index = 1
+position = Vector2(718, 620)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass48" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1905903980]
+z_index = 1
+position = Vector2(652, 663)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass49" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1451539281]
+z_index = 1
+position = Vector2(580, 702)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass50" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1960283330]
+z_index = 1
+position = Vector2(501, 743)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass51" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1903783154]
+z_index = 1
+position = Vector2(430, 790)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass52" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1949263453]
+z_index = 1
+position = Vector2(928, 574)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass53" type="Sprite2D" parent="Stuff_In_Forest" unique_id=964482086]
+z_index = 1
+position = Vector2(854, 619)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass54" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1666760352]
+position = Vector2(997, 530)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass55" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1608668016]
+z_index = 1
+position = Vector2(786, 663)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass56" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1883597606]
+z_index = 1
+position = Vector2(720, 706)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass57" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1467480951]
+z_index = 1
+position = Vector2(648, 745)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass58" type="Sprite2D" parent="Stuff_In_Forest" unique_id=728065880]
+z_index = 1
+position = Vector2(569, 786)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass59" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1841151400]
+z_index = 1
+position = Vector2(498, 833)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass60" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1443414950]
+z_index = 1
+position = Vector2(1002, 618)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass61" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2022003973]
+z_index = 1
+position = Vector2(928, 663)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass62" type="Sprite2D" parent="Stuff_In_Forest" unique_id=210506399]
+position = Vector2(1071, 574)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass63" type="Sprite2D" parent="Stuff_In_Forest" unique_id=490322984]
+z_index = 1
+position = Vector2(860, 707)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass64" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1317635731]
+z_index = 1
+position = Vector2(794, 750)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass65" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1762793009]
+z_index = 1
+position = Vector2(722, 789)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass66" type="Sprite2D" parent="Stuff_In_Forest" unique_id=92835117]
+z_index = 1
+position = Vector2(643, 830)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass67" type="Sprite2D" parent="Stuff_In_Forest" unique_id=338644513]
+z_index = 1
+position = Vector2(572, 877)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass68" type="Sprite2D" parent="Stuff_In_Forest" unique_id=441313042]
+z_index = 1
+position = Vector2(1071, 656)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass69" type="Sprite2D" parent="Stuff_In_Forest" unique_id=764033473]
+z_index = 1
+position = Vector2(997, 701)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass70" type="Sprite2D" parent="Stuff_In_Forest" unique_id=460019795]
+position = Vector2(1140, 612)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass71" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2065351475]
+z_index = 1
+position = Vector2(929, 745)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass72" type="Sprite2D" parent="Stuff_In_Forest" unique_id=205639982]
+z_index = 1
+position = Vector2(863, 788)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass73" type="Sprite2D" parent="Stuff_In_Forest" unique_id=22125791]
+z_index = 1
+position = Vector2(791, 827)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass74" type="Sprite2D" parent="Stuff_In_Forest" unique_id=410414853]
+z_index = 1
+position = Vector2(712, 868)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass75" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1363821828]
+z_index = 1
+position = Vector2(641, 915)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass76" type="Sprite2D" parent="Stuff_In_Forest" unique_id=734824166]
+z_index = 1
+position = Vector2(1148, 699)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass77" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1103044075]
+z_index = 1
+position = Vector2(1074, 744)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass78" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1533965768]
+position = Vector2(1217, 655)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass79" type="Sprite2D" parent="Stuff_In_Forest" unique_id=797246093]
+z_index = 1
+position = Vector2(1006, 788)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass80" type="Sprite2D" parent="Stuff_In_Forest" unique_id=416547559]
+z_index = 1
+position = Vector2(940, 831)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass81" type="Sprite2D" parent="Stuff_In_Forest" unique_id=315980209]
+z_index = 1
+position = Vector2(868, 870)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass82" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1570470864]
+z_index = 1
+position = Vector2(789, 911)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass83" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1310721916]
+z_index = 1
+position = Vector2(718, 958)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass84" type="Sprite2D" parent="Stuff_In_Forest" unique_id=395757456]
+z_index = 1
+position = Vector2(1214, 746)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass85" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1450481752]
+z_index = 1
+position = Vector2(1140, 791)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass86" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1079705501]
+position = Vector2(1283, 702)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass87" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1478611635]
+z_index = 1
+position = Vector2(1072, 835)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass88" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1700762396]
+z_index = 1
+position = Vector2(1006, 878)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass89" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1340682616]
+z_index = 1
+position = Vector2(934, 917)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass90" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1915665380]
+z_index = 1
+position = Vector2(855, 958)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass91" type="Sprite2D" parent="Stuff_In_Forest" unique_id=456138476]
+z_index = 1
+position = Vector2(784, 1005)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass92" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1332480420]
+z_index = 1
+position = Vector2(1284, 787)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass93" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1808275564]
+z_index = 1
+position = Vector2(1210, 832)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass94" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1893751374]
+position = Vector2(1353, 743)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass95" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1106878397]
+z_index = 1
+position = Vector2(1142, 876)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass96" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1006457288]
+z_index = 1
+position = Vector2(1076, 919)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass97" type="Sprite2D" parent="Stuff_In_Forest" unique_id=950964121]
+z_index = 1
+position = Vector2(1004, 958)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass98" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1683610538]
+z_index = 1
+position = Vector2(925, 999)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass99" type="Sprite2D" parent="Stuff_In_Forest" unique_id=913157877]
+z_index = 1
+position = Vector2(854, 1046)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass100" type="Sprite2D" parent="Stuff_In_Forest" unique_id=541601734]
+z_index = 1
+position = Vector2(1358, 827)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass101" type="Sprite2D" parent="Stuff_In_Forest" unique_id=163972986]
+z_index = 1
+position = Vector2(1284, 872)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass102" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1953033344]
+position = Vector2(1427, 783)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass103" type="Sprite2D" parent="Stuff_In_Forest" unique_id=749178269]
+z_index = 1
+position = Vector2(1216, 916)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass104" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2081784848]
+z_index = 1
+position = Vector2(1150, 959)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass105" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1303438790]
+z_index = 1
+position = Vector2(1078, 998)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass106" type="Sprite2D" parent="Stuff_In_Forest" unique_id=888187993]
+z_index = 1
+position = Vector2(999, 1039)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass107" type="Sprite2D" parent="Stuff_In_Forest" unique_id=228929795]
+z_index = 1
+position = Vector2(928, 1086)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass108" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1666635464]
+z_index = 1
+position = Vector2(1424, 870)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass109" type="Sprite2D" parent="Stuff_In_Forest" unique_id=260612197]
+z_index = 1
+position = Vector2(1350, 915)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass110" type="Sprite2D" parent="Stuff_In_Forest" unique_id=740911513]
+position = Vector2(1493, 826)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass111" type="Sprite2D" parent="Stuff_In_Forest" unique_id=141307008]
+z_index = 1
+position = Vector2(1282, 959)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass112" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1444770604]
+z_index = 1
+position = Vector2(1216, 1002)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass113" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1013924380]
+z_index = 1
+position = Vector2(1144, 1041)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass114" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1101631969]
+z_index = 1
+position = Vector2(1065, 1082)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass115" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1333600835]
+z_index = 1
+position = Vector2(994, 1129)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass116" type="Sprite2D" parent="Stuff_In_Forest" unique_id=288287394]
+z_index = 1
+position = Vector2(1482, 906)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass117" type="Sprite2D" parent="Stuff_In_Forest" unique_id=302866185]
+z_index = 1
+position = Vector2(1408, 951)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass118" type="Sprite2D" parent="Stuff_In_Forest" unique_id=385400829]
+position = Vector2(1551, 862)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass119" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1909673866]
+z_index = 1
+position = Vector2(1340, 995)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass120" type="Sprite2D" parent="Stuff_In_Forest" unique_id=822666658]
+z_index = 1
+position = Vector2(1274, 1038)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass121" type="Sprite2D" parent="Stuff_In_Forest" unique_id=70589821]
+z_index = 1
+position = Vector2(1202, 1077)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass122" type="Sprite2D" parent="Stuff_In_Forest" unique_id=551708474]
+z_index = 1
+position = Vector2(1123, 1118)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass123" type="Sprite2D" parent="Stuff_In_Forest" unique_id=157398345]
+z_index = 1
+position = Vector2(1052, 1165)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass124" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1688739210]
+z_index = 1
+position = Vector2(1554, 951)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass125" type="Sprite2D" parent="Stuff_In_Forest" unique_id=828045725]
+z_index = 1
+position = Vector2(1480, 996)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass126" type="Sprite2D" parent="Stuff_In_Forest" unique_id=170376305]
+position = Vector2(1623, 907)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass127" type="Sprite2D" parent="Stuff_In_Forest" unique_id=660391208]
+z_index = 1
+position = Vector2(1412, 1040)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass128" type="Sprite2D" parent="Stuff_In_Forest" unique_id=477248260]
+z_index = 1
+position = Vector2(1346, 1083)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass129" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1863844625]
+z_index = 1
+position = Vector2(1274, 1122)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass130" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1415526366]
+z_index = 1
+position = Vector2(1195, 1163)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass131" type="Sprite2D" parent="Stuff_In_Forest" unique_id=416219361]
+z_index = 1
+position = Vector2(1124, 1210)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass132" type="Sprite2D" parent="Stuff_In_Forest" unique_id=986006874]
+z_index = 1
+position = Vector2(1624, 1002)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass133" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1532361889]
+z_index = 1
+position = Vector2(1550, 1047)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass134" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2075296976]
+position = Vector2(1693, 958)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass135" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1382039609]
+z_index = 1
+position = Vector2(1482, 1091)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass136" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1425169812]
+z_index = 1
+position = Vector2(1416, 1134)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass137" type="Sprite2D" parent="Stuff_In_Forest" unique_id=528429588]
+z_index = 1
+position = Vector2(1344, 1173)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass138" type="Sprite2D" parent="Stuff_In_Forest" unique_id=538024338]
+z_index = 1
+position = Vector2(1265, 1214)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass139" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1325807679]
+z_index = 1
+position = Vector2(1194, 1261)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass23" type="Sprite2D" parent="Stuff_In_Forest" unique_id=216078716]
+position = Vector2(147, 617)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass24" type="Sprite2D" parent="Stuff_In_Forest" unique_id=625569419]
+z_index = -1
+position = Vector2(72, 573)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass141" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1876584763]
+z_index = -1
+position = Vector2(72, 573)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass142" type="Sprite2D" parent="Stuff_In_Forest" unique_id=107273381]
+z_index = 1
+position = Vector2(160, 707)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass143" type="Sprite2D" parent="Stuff_In_Forest" unique_id=655519220]
+z_index = 1
+position = Vector2(230, 755)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass144" type="Sprite2D" parent="Stuff_In_Forest" unique_id=647663090]
+z_index = 1
+position = Vector2(302, 793)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass145" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2069571886]
+z_index = 1
+position = Vector2(370, 834)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass146" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1110587237]
+z_index = 1
+position = Vector2(438, 877)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass147" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2101774994]
+z_index = 1
+position = Vector2(512, 921)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass148" type="Sprite2D" parent="Stuff_In_Forest" unique_id=619446245]
+z_index = 1
+position = Vector2(581, 959)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass149" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1696837417]
+z_index = 1
+position = Vector2(658, 1002)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass150" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1312988940]
+z_index = 1
+position = Vector2(724, 1049)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass151" type="Sprite2D" parent="Stuff_In_Forest" unique_id=516172153]
+z_index = 1
+position = Vector2(794, 1090)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass152" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1518312661]
+z_index = 1
+position = Vector2(868, 1130)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass153" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1514759007]
+z_index = 1
+position = Vector2(934, 1173)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass154" type="Sprite2D" parent="Stuff_In_Forest" unique_id=686773861]
+z_index = 1
+position = Vector2(992, 1209)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass155" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1951787639]
+z_index = 1
+position = Vector2(1064, 1254)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass156" type="Sprite2D" parent="Stuff_In_Forest" unique_id=292412173]
+z_index = 1
+position = Vector2(1134, 1305)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass157" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1429531044]
+position = Vector2(87, 661)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass158" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1797033992]
+z_index = -1
+position = Vector2(12, 617)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass159" type="Sprite2D" parent="Stuff_In_Forest" unique_id=46688402]
+z_index = 1
+position = Vector2(92, 753)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass160" type="Sprite2D" parent="Stuff_In_Forest" unique_id=200141876]
+z_index = 1
+position = Vector2(162, 801)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass161" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1458320084]
+z_index = 1
+position = Vector2(234, 839)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass162" type="Sprite2D" parent="Stuff_In_Forest" unique_id=987856501]
+z_index = 1
+position = Vector2(302, 880)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass163" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1223420913]
+z_index = 1
+position = Vector2(370, 923)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass164" type="Sprite2D" parent="Stuff_In_Forest" unique_id=406378623]
+z_index = 1
+position = Vector2(444, 967)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass165" type="Sprite2D" parent="Stuff_In_Forest" unique_id=840455801]
+z_index = 1
+position = Vector2(513, 1005)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass166" type="Sprite2D" parent="Stuff_In_Forest" unique_id=844671934]
+z_index = 1
+position = Vector2(590, 1048)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass167" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1069564331]
+z_index = 1
+position = Vector2(656, 1095)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass168" type="Sprite2D" parent="Stuff_In_Forest" unique_id=770623991]
+z_index = 1
+position = Vector2(726, 1136)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass169" type="Sprite2D" parent="Stuff_In_Forest" unique_id=321329814]
+z_index = 1
+position = Vector2(800, 1176)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass170" type="Sprite2D" parent="Stuff_In_Forest" unique_id=583578928]
+z_index = 1
+position = Vector2(866, 1219)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass171" type="Sprite2D" parent="Stuff_In_Forest" unique_id=887211097]
+z_index = 1
+position = Vector2(924, 1255)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass172" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1733802578]
+z_index = 1
+position = Vector2(996, 1300)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass173" type="Sprite2D" parent="Stuff_In_Forest" unique_id=16544807]
+z_index = 1
+position = Vector2(1066, 1351)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass174" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2074980253]
+position = Vector2(19, 707)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass175" type="Sprite2D" parent="Stuff_In_Forest" unique_id=187332923]
+z_index = -1
+position = Vector2(-56, 663)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass176" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1279606484]
+z_index = 1
+position = Vector2(17, 794)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass177" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1304899115]
+z_index = 1
+position = Vector2(87, 842)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass178" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1539075660]
+z_index = 1
+position = Vector2(159, 880)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass179" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1934348010]
+z_index = 1
+position = Vector2(227, 921)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass180" type="Sprite2D" parent="Stuff_In_Forest" unique_id=609358124]
+z_index = 1
+position = Vector2(295, 964)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass181" type="Sprite2D" parent="Stuff_In_Forest" unique_id=796657841]
+z_index = 1
+position = Vector2(369, 1008)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass182" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1452688844]
+z_index = 1
+position = Vector2(438, 1046)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass183" type="Sprite2D" parent="Stuff_In_Forest" unique_id=565820082]
+z_index = 1
+position = Vector2(515, 1089)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass184" type="Sprite2D" parent="Stuff_In_Forest" unique_id=977218915]
+z_index = 1
+position = Vector2(581, 1136)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass185" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1393119154]
+z_index = 1
+position = Vector2(651, 1177)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass186" type="Sprite2D" parent="Stuff_In_Forest" unique_id=893711695]
+z_index = 1
+position = Vector2(725, 1217)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass187" type="Sprite2D" parent="Stuff_In_Forest" unique_id=399726259]
+z_index = 1
+position = Vector2(791, 1260)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass188" type="Sprite2D" parent="Stuff_In_Forest" unique_id=975730178]
+z_index = 1
+position = Vector2(849, 1296)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass189" type="Sprite2D" parent="Stuff_In_Forest" unique_id=164571550]
+z_index = 1
+position = Vector2(921, 1341)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass190" type="Sprite2D" parent="Stuff_In_Forest" unique_id=859742986]
+z_index = 1
+position = Vector2(991, 1392)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass191" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2042882908]
+position = Vector2(-56, 748)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass192" type="Sprite2D" parent="Stuff_In_Forest" unique_id=98308937]
+z_index = -1
+position = Vector2(-131, 704)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass193" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1147776419]
+z_index = 1
+position = Vector2(-58, 836)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass194" type="Sprite2D" parent="Stuff_In_Forest" unique_id=536291515]
+z_index = 1
+position = Vector2(12, 884)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass195" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2033144163]
+z_index = 1
+position = Vector2(84, 922)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass196" type="Sprite2D" parent="Stuff_In_Forest" unique_id=782660170]
+z_index = 1
+position = Vector2(152, 963)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass197" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1664713967]
+z_index = 1
+position = Vector2(220, 1004)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass198" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1121782135]
+z_index = 1
+position = Vector2(294, 1050)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass199" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2015923011]
+z_index = 1
+position = Vector2(363, 1088)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass200" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1703552776]
+z_index = 1
+position = Vector2(440, 1131)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass201" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1081541449]
+z_index = 1
+position = Vector2(506, 1178)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass202" type="Sprite2D" parent="Stuff_In_Forest" unique_id=91029307]
+z_index = 1
+position = Vector2(576, 1219)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass203" type="Sprite2D" parent="Stuff_In_Forest" unique_id=941480775]
+z_index = 1
+position = Vector2(650, 1259)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass204" type="Sprite2D" parent="Stuff_In_Forest" unique_id=333720582]
+z_index = 1
+position = Vector2(716, 1302)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass205" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1882570922]
+z_index = 1
+position = Vector2(774, 1338)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass206" type="Sprite2D" parent="Stuff_In_Forest" unique_id=851486224]
+z_index = 1
+position = Vector2(846, 1383)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass207" type="Sprite2D" parent="Stuff_In_Forest" unique_id=615729310]
+z_index = 1
+position = Vector2(916, 1434)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass208" type="Sprite2D" parent="Stuff_In_Forest" unique_id=829259927]
+position = Vector2(-131, 790)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass209" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1544927938]
+z_index = -1
+position = Vector2(-206, 746)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass210" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1797033479]
+z_index = 1
+position = Vector2(-122, 886)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass211" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1371533274]
+z_index = 1
+position = Vector2(-52, 934)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass212" type="Sprite2D" parent="Stuff_In_Forest" unique_id=627717067]
+z_index = 1
+position = Vector2(20, 972)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass213" type="Sprite2D" parent="Stuff_In_Forest" unique_id=386450922]
+z_index = 1
+position = Vector2(88, 1013)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass214" type="Sprite2D" parent="Stuff_In_Forest" unique_id=808396573]
+z_index = 1
+position = Vector2(156, 1056)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass215" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1912415870]
+z_index = 1
+position = Vector2(230, 1100)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass216" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1469958894]
+z_index = 1
+position = Vector2(299, 1138)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass217" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2075447843]
+z_index = 1
+position = Vector2(376, 1181)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass218" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1796075389]
+z_index = 1
+position = Vector2(442, 1228)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass219" type="Sprite2D" parent="Stuff_In_Forest" unique_id=354207141]
+z_index = 1
+position = Vector2(512, 1269)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass220" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1459543476]
+z_index = 1
+position = Vector2(586, 1309)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass221" type="Sprite2D" parent="Stuff_In_Forest" unique_id=839309767]
+z_index = 1
+position = Vector2(652, 1352)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass222" type="Sprite2D" parent="Stuff_In_Forest" unique_id=858289451]
+z_index = 1
+position = Vector2(710, 1388)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass223" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1149369470]
+z_index = 1
+position = Vector2(782, 1433)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass224" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1276891946]
+z_index = 1
+position = Vector2(850, 1476)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass227" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1576805687]
+z_index = 1
+position = Vector2(1692, 1048)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass228" type="Sprite2D" parent="Stuff_In_Forest" unique_id=759102826]
+z_index = 1
+position = Vector2(1618, 1093)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass229" type="Sprite2D" parent="Stuff_In_Forest" unique_id=392802345]
+position = Vector2(1761, 1004)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass230" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1734494146]
+z_index = 1
+position = Vector2(1550, 1137)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass231" type="Sprite2D" parent="Stuff_In_Forest" unique_id=422506764]
+z_index = 1
+position = Vector2(1484, 1180)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass232" type="Sprite2D" parent="Stuff_In_Forest" unique_id=149110565]
+z_index = 1
+position = Vector2(1412, 1219)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass233" type="Sprite2D" parent="Stuff_In_Forest" unique_id=230524905]
+z_index = 1
+position = Vector2(1333, 1260)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass234" type="Sprite2D" parent="Stuff_In_Forest" unique_id=362893768]
+z_index = 1
+position = Vector2(1262, 1307)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass235" type="Sprite2D" parent="Stuff_In_Forest" unique_id=68087856]
+z_index = 1
+position = Vector2(1202, 1351)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass236" type="Sprite2D" parent="Stuff_In_Forest" unique_id=417212687]
+z_index = 1
+position = Vector2(1134, 1397)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass237" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1053755642]
+z_index = 1
+position = Vector2(1059, 1438)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass238" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1732234867]
+z_index = 1
+position = Vector2(984, 1480)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass239" type="Sprite2D" parent="Stuff_In_Forest" unique_id=880793001]
+z_index = 1
+position = Vector2(918, 1522)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass240" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2086971878]
+z_index = 1
+position = Vector2(1760, 1092)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass241" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1683211524]
+z_index = 1
+position = Vector2(1686, 1137)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass242" type="Sprite2D" parent="Stuff_In_Forest" unique_id=56757783]
+position = Vector2(1829, 1048)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass243" type="Sprite2D" parent="Stuff_In_Forest" unique_id=565537572]
+z_index = 1
+position = Vector2(1618, 1181)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass244" type="Sprite2D" parent="Stuff_In_Forest" unique_id=240215423]
+z_index = 1
+position = Vector2(1552, 1224)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass245" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1545737398]
+z_index = 1
+position = Vector2(1480, 1263)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass246" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1524035204]
+z_index = 1
+position = Vector2(1401, 1304)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass247" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1472992494]
+z_index = 1
+position = Vector2(1330, 1351)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass248" type="Sprite2D" parent="Stuff_In_Forest" unique_id=11809927]
+z_index = 1
+position = Vector2(1270, 1395)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass249" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1514134206]
+z_index = 1
+position = Vector2(1202, 1441)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass250" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1398519389]
+z_index = 1
+position = Vector2(1127, 1482)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass251" type="Sprite2D" parent="Stuff_In_Forest" unique_id=617529897]
+z_index = 1
+position = Vector2(1052, 1524)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass252" type="Sprite2D" parent="Stuff_In_Forest" unique_id=729922482]
+z_index = 1
+position = Vector2(986, 1566)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass253" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1796782091]
+z_index = 1
+position = Vector2(1828, 1142)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass254" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1779589297]
+z_index = 1
+position = Vector2(1754, 1187)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass255" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1171025915]
+position = Vector2(1897, 1098)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass256" type="Sprite2D" parent="Stuff_In_Forest" unique_id=591178781]
+z_index = 1
+position = Vector2(1686, 1231)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass257" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1353443753]
+z_index = 1
+position = Vector2(1620, 1274)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass258" type="Sprite2D" parent="Stuff_In_Forest" unique_id=821623676]
+z_index = 1
+position = Vector2(1548, 1313)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass259" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1960067581]
+z_index = 1
+position = Vector2(1469, 1354)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass260" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1493417131]
+z_index = 1
+position = Vector2(1398, 1401)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass261" type="Sprite2D" parent="Stuff_In_Forest" unique_id=251767328]
+z_index = 1
+position = Vector2(1338, 1445)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass262" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1281221466]
+z_index = 1
+position = Vector2(1270, 1491)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass263" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1187442342]
+z_index = 1
+position = Vector2(1195, 1532)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass264" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1221547705]
+z_index = 1
+position = Vector2(1120, 1574)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass265" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1905937611]
+z_index = 1
+position = Vector2(1054, 1616)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass266" type="Sprite2D" parent="Stuff_In_Forest" unique_id=977971487]
+z_index = 1
+position = Vector2(1894, 1193)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass267" type="Sprite2D" parent="Stuff_In_Forest" unique_id=456843391]
+z_index = 1
+position = Vector2(1820, 1238)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass268" type="Sprite2D" parent="Stuff_In_Forest" unique_id=341406653]
+position = Vector2(1963, 1149)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass269" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1972087987]
+z_index = 1
+position = Vector2(1752, 1282)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass270" type="Sprite2D" parent="Stuff_In_Forest" unique_id=991599243]
+z_index = 1
+position = Vector2(1686, 1325)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass271" type="Sprite2D" parent="Stuff_In_Forest" unique_id=739584872]
+z_index = 1
+position = Vector2(1614, 1364)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass272" type="Sprite2D" parent="Stuff_In_Forest" unique_id=458069156]
+z_index = 1
+position = Vector2(1535, 1405)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass273" type="Sprite2D" parent="Stuff_In_Forest" unique_id=640690620]
+z_index = 1
+position = Vector2(1464, 1452)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass274" type="Sprite2D" parent="Stuff_In_Forest" unique_id=5967075]
+z_index = 1
+position = Vector2(1404, 1496)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass275" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1112445899]
+z_index = 1
+position = Vector2(1336, 1542)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass276" type="Sprite2D" parent="Stuff_In_Forest" unique_id=256924848]
+z_index = 1
+position = Vector2(1261, 1583)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass277" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2119909217]
+z_index = 1
+position = Vector2(1186, 1625)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass278" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1470182888]
+z_index = 1
+position = Vector2(1120, 1667)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass279" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1226401712]
+z_index = 1
+position = Vector2(1961, 1246)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass280" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1888914348]
+z_index = 1
+position = Vector2(1887, 1291)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass281" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1433219057]
+position = Vector2(2030, 1202)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass282" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1100253239]
+z_index = 1
+position = Vector2(1819, 1335)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass283" type="Sprite2D" parent="Stuff_In_Forest" unique_id=928242379]
+z_index = 1
+position = Vector2(1753, 1378)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass284" type="Sprite2D" parent="Stuff_In_Forest" unique_id=98166311]
+z_index = 1
+position = Vector2(1681, 1417)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass285" type="Sprite2D" parent="Stuff_In_Forest" unique_id=795534328]
+z_index = 1
+position = Vector2(1602, 1458)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass286" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1985349875]
+z_index = 1
+position = Vector2(1531, 1505)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass287" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2143216587]
+z_index = 1
+position = Vector2(1471, 1549)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass288" type="Sprite2D" parent="Stuff_In_Forest" unique_id=952761747]
+z_index = 1
+position = Vector2(1403, 1595)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass289" type="Sprite2D" parent="Stuff_In_Forest" unique_id=897618601]
+z_index = 1
+position = Vector2(1328, 1636)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass290" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1353333611]
+z_index = 1
+position = Vector2(1253, 1678)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass291" type="Sprite2D" parent="Stuff_In_Forest" unique_id=516295280]
+z_index = 1
+position = Vector2(1187, 1715)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass292" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1472846992]
+z_index = 1
+position = Vector2(2033, 1289)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass293" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1050846568]
+z_index = 1
+position = Vector2(1959, 1334)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass294" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2030666166]
+position = Vector2(2102, 1245)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass295" type="Sprite2D" parent="Stuff_In_Forest" unique_id=441531002]
+z_index = 1
+position = Vector2(1891, 1378)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass296" type="Sprite2D" parent="Stuff_In_Forest" unique_id=311103814]
+z_index = 1
+position = Vector2(1825, 1421)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass297" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1265590420]
+z_index = 1
+position = Vector2(1753, 1460)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass298" type="Sprite2D" parent="Stuff_In_Forest" unique_id=925039116]
+z_index = 1
+position = Vector2(1674, 1501)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass299" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1001698708]
+z_index = 1
+position = Vector2(1603, 1548)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass300" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1597807619]
+z_index = 1
+position = Vector2(1543, 1592)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass301" type="Sprite2D" parent="Stuff_In_Forest" unique_id=800560328]
+z_index = 1
+position = Vector2(1475, 1638)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass302" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2102749996]
+z_index = 1
+position = Vector2(1400, 1679)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass303" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1601316716]
+z_index = 1
+position = Vector2(1325, 1721)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass304" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1076058165]
+z_index = 1
+position = Vector2(1266, 1752)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass305" type="Sprite2D" parent="Stuff_In_Forest" unique_id=976538245]
+z_index = 1
+position = Vector2(2113, 1319)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass306" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1210813391]
+z_index = 1
+position = Vector2(2039, 1364)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass307" type="Sprite2D" parent="Stuff_In_Forest" unique_id=557899825]
+position = Vector2(2182, 1275)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass308" type="Sprite2D" parent="Stuff_In_Forest" unique_id=512374811]
+z_index = 1
+position = Vector2(1971, 1408)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass309" type="Sprite2D" parent="Stuff_In_Forest" unique_id=687605966]
+z_index = 1
+position = Vector2(1905, 1451)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass310" type="Sprite2D" parent="Stuff_In_Forest" unique_id=678480861]
+z_index = 1
+position = Vector2(1833, 1490)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass311" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1521523591]
+z_index = 1
+position = Vector2(1754, 1531)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass312" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1087744532]
+z_index = 1
+position = Vector2(1683, 1578)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass313" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1906687849]
+z_index = 1
+position = Vector2(1623, 1622)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass314" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1418292222]
+z_index = 1
+position = Vector2(1555, 1668)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass315" type="Sprite2D" parent="Stuff_In_Forest" unique_id=267005308]
+z_index = 1
+position = Vector2(1480, 1709)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass316" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1141594074]
+z_index = 1
+position = Vector2(1405, 1751)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass317" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1645424095]
+z_index = 1
+position = Vector2(1337, 1793)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass318" type="Sprite2D" parent="Stuff_In_Forest" unique_id=481293924]
+z_index = 1
+position = Vector2(2181, 1365)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass319" type="Sprite2D" parent="Stuff_In_Forest" unique_id=955692948]
+z_index = 1
+position = Vector2(2107, 1410)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass320" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1103920034]
+position = Vector2(2250, 1321)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass321" type="Sprite2D" parent="Stuff_In_Forest" unique_id=900193934]
+z_index = 1
+position = Vector2(2039, 1454)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass322" type="Sprite2D" parent="Stuff_In_Forest" unique_id=880112388]
+z_index = 1
+position = Vector2(1973, 1497)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass323" type="Sprite2D" parent="Stuff_In_Forest" unique_id=959494325]
+z_index = 1
+position = Vector2(1901, 1536)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass324" type="Sprite2D" parent="Stuff_In_Forest" unique_id=513515012]
+z_index = 1
+position = Vector2(1822, 1577)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass325" type="Sprite2D" parent="Stuff_In_Forest" unique_id=469159077]
+z_index = 1
+position = Vector2(1751, 1624)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass326" type="Sprite2D" parent="Stuff_In_Forest" unique_id=650699302]
+z_index = 1
+position = Vector2(1691, 1668)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass327" type="Sprite2D" parent="Stuff_In_Forest" unique_id=375309863]
+z_index = 1
+position = Vector2(1623, 1714)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass328" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1706735344]
+z_index = 1
+position = Vector2(1548, 1755)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass329" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1653840456]
+z_index = 1
+position = Vector2(1473, 1797)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass330" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1918674567]
+z_index = 1
+position = Vector2(1407, 1839)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass331" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1500618066]
+z_index = 1
+position = Vector2(2249, 1409)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass332" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1398340846]
+z_index = 1
+position = Vector2(2175, 1454)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass333" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1687231058]
+position = Vector2(2318, 1365)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass334" type="Sprite2D" parent="Stuff_In_Forest" unique_id=380076988]
+z_index = 1
+position = Vector2(2107, 1498)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass335" type="Sprite2D" parent="Stuff_In_Forest" unique_id=213247562]
+z_index = 1
+position = Vector2(2041, 1541)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass336" type="Sprite2D" parent="Stuff_In_Forest" unique_id=311284810]
+z_index = 1
+position = Vector2(1969, 1580)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass337" type="Sprite2D" parent="Stuff_In_Forest" unique_id=892938968]
+z_index = 1
+position = Vector2(1890, 1621)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass338" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1079701348]
+z_index = 1
+position = Vector2(1819, 1668)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass339" type="Sprite2D" parent="Stuff_In_Forest" unique_id=84647553]
+z_index = 1
+position = Vector2(1759, 1712)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass340" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1332917819]
+z_index = 1
+position = Vector2(1691, 1758)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass341" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1114753823]
+z_index = 1
+position = Vector2(1616, 1799)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass342" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1204558231]
+z_index = 1
+position = Vector2(1541, 1841)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass343" type="Sprite2D" parent="Stuff_In_Forest" unique_id=608968488]
+z_index = 1
+position = Vector2(1475, 1883)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass344" type="Sprite2D" parent="Stuff_In_Forest" unique_id=477432762]
+z_index = 1
+position = Vector2(2317, 1459)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass345" type="Sprite2D" parent="Stuff_In_Forest" unique_id=546079345]
+z_index = 1
+position = Vector2(2243, 1504)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass346" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1213698009]
+position = Vector2(2386, 1415)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass347" type="Sprite2D" parent="Stuff_In_Forest" unique_id=102802679]
+z_index = 1
+position = Vector2(2175, 1548)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass348" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1579674352]
+z_index = 1
+position = Vector2(2109, 1591)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass349" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1786186239]
+z_index = 1
+position = Vector2(2037, 1630)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass350" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2107979360]
+z_index = 1
+position = Vector2(1958, 1671)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass351" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1807672982]
+z_index = 1
+position = Vector2(1887, 1718)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass352" type="Sprite2D" parent="Stuff_In_Forest" unique_id=335043175]
+z_index = 1
+position = Vector2(1827, 1762)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass353" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1910518056]
+z_index = 1
+position = Vector2(1759, 1808)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass354" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1761011044]
+z_index = 1
+position = Vector2(1684, 1849)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass355" type="Sprite2D" parent="Stuff_In_Forest" unique_id=205304406]
+z_index = 1
+position = Vector2(1609, 1891)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass356" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1340251752]
+z_index = 1
+position = Vector2(1543, 1933)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass357" type="Sprite2D" parent="Stuff_In_Forest" unique_id=668086523]
+z_index = 1
+position = Vector2(2383, 1510)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass358" type="Sprite2D" parent="Stuff_In_Forest" unique_id=844966408]
+z_index = 1
+position = Vector2(2309, 1555)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass359" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1061549540]
+position = Vector2(2452, 1466)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass360" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1993072517]
+z_index = 1
+position = Vector2(2241, 1599)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass361" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1547673167]
+z_index = 1
+position = Vector2(2175, 1642)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass362" type="Sprite2D" parent="Stuff_In_Forest" unique_id=840881122]
+z_index = 1
+position = Vector2(2103, 1681)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass363" type="Sprite2D" parent="Stuff_In_Forest" unique_id=106508846]
+z_index = 1
+position = Vector2(2024, 1722)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass364" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1284021932]
+z_index = 1
+position = Vector2(1953, 1769)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass365" type="Sprite2D" parent="Stuff_In_Forest" unique_id=553692264]
+z_index = 1
+position = Vector2(1893, 1813)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass366" type="Sprite2D" parent="Stuff_In_Forest" unique_id=76611578]
+z_index = 1
+position = Vector2(1825, 1859)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass367" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1161675422]
+z_index = 1
+position = Vector2(1750, 1900)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass368" type="Sprite2D" parent="Stuff_In_Forest" unique_id=312921801]
+z_index = 1
+position = Vector2(1675, 1942)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass369" type="Sprite2D" parent="Stuff_In_Forest" unique_id=57174160]
+z_index = 1
+position = Vector2(1609, 1984)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass370" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1635255185]
+z_index = 1
+position = Vector2(2450, 1563)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass371" type="Sprite2D" parent="Stuff_In_Forest" unique_id=985963042]
+z_index = 1
+position = Vector2(2376, 1608)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass372" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2132166427]
+position = Vector2(2519, 1519)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass373" type="Sprite2D" parent="Stuff_In_Forest" unique_id=724385667]
+z_index = 1
+position = Vector2(2308, 1652)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass374" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1127787316]
+z_index = 1
+position = Vector2(2242, 1695)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass375" type="Sprite2D" parent="Stuff_In_Forest" unique_id=966381412]
+z_index = 1
+position = Vector2(2170, 1734)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass376" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1061362445]
+z_index = 1
+position = Vector2(2091, 1775)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass377" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1764979192]
+z_index = 1
+position = Vector2(2020, 1822)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass378" type="Sprite2D" parent="Stuff_In_Forest" unique_id=800909580]
+z_index = 1
+position = Vector2(1960, 1866)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass379" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1136985353]
+z_index = 1
+position = Vector2(1892, 1912)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass380" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1700100392]
+z_index = 1
+position = Vector2(1817, 1953)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass381" type="Sprite2D" parent="Stuff_In_Forest" unique_id=551675070]
+z_index = 1
+position = Vector2(1742, 1995)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass382" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1175445874]
+z_index = 1
+position = Vector2(1676, 2037)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass383" type="Sprite2D" parent="Stuff_In_Forest" unique_id=354601680]
+z_index = 1
+position = Vector2(2522, 1606)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass384" type="Sprite2D" parent="Stuff_In_Forest" unique_id=247962606]
+z_index = 1
+position = Vector2(2448, 1651)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass385" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1329212420]
+position = Vector2(2591, 1562)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass386" type="Sprite2D" parent="Stuff_In_Forest" unique_id=32915279]
+z_index = 1
+position = Vector2(2380, 1695)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass387" type="Sprite2D" parent="Stuff_In_Forest" unique_id=6688642]
+z_index = 1
+position = Vector2(2314, 1738)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass388" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1663489231]
+z_index = 1
+position = Vector2(2242, 1777)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass389" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1012649519]
+z_index = 1
+position = Vector2(2163, 1818)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass390" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1802613080]
+z_index = 1
+position = Vector2(2092, 1865)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass391" type="Sprite2D" parent="Stuff_In_Forest" unique_id=564680937]
+z_index = 1
+position = Vector2(2032, 1909)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass392" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1785779161]
+z_index = 1
+position = Vector2(1964, 1955)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass393" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1703923124]
+z_index = 1
+position = Vector2(1889, 1996)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass394" type="Sprite2D" parent="Stuff_In_Forest" unique_id=97896157]
+z_index = 1
+position = Vector2(1814, 2038)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass395" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1633219697]
+z_index = 1
+position = Vector2(1748, 2080)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass396" type="Sprite2D" parent="Stuff_In_Forest" unique_id=949744437]
+z_index = 1
+position = Vector2(2593, 1645)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass397" type="Sprite2D" parent="Stuff_In_Forest" unique_id=281099541]
+z_index = 1
+position = Vector2(2519, 1690)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass398" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1083234102]
+position = Vector2(2662, 1601)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass399" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1556072049]
+z_index = 1
+position = Vector2(2451, 1734)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass400" type="Sprite2D" parent="Stuff_In_Forest" unique_id=397778891]
+z_index = 1
+position = Vector2(2385, 1777)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass401" type="Sprite2D" parent="Stuff_In_Forest" unique_id=90929548]
+z_index = 1
+position = Vector2(2313, 1816)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass402" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1188547724]
+z_index = 1
+position = Vector2(2234, 1857)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass403" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1284828887]
+z_index = 1
+position = Vector2(2163, 1904)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass404" type="Sprite2D" parent="Stuff_In_Forest" unique_id=114297794]
+z_index = 1
+position = Vector2(2103, 1948)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass405" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1435351013]
+z_index = 1
+position = Vector2(2035, 1994)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass406" type="Sprite2D" parent="Stuff_In_Forest" unique_id=302420093]
+z_index = 1
+position = Vector2(1960, 2035)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass407" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1797109647]
+z_index = 1
+position = Vector2(1885, 2077)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass408" type="Sprite2D" parent="Stuff_In_Forest" unique_id=844481819]
+z_index = 1
+position = Vector2(1819, 2119)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass409" type="Sprite2D" parent="Stuff_In_Forest" unique_id=12437434]
+z_index = 1
+position = Vector2(2661, 1691)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass410" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2060690566]
+z_index = 1
+position = Vector2(2587, 1736)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass411" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1487140776]
+position = Vector2(2730, 1647)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass412" type="Sprite2D" parent="Stuff_In_Forest" unique_id=447039017]
+z_index = 1
+position = Vector2(2519, 1780)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass413" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1059425070]
+z_index = 1
+position = Vector2(2453, 1823)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass414" type="Sprite2D" parent="Stuff_In_Forest" unique_id=569047342]
+z_index = 1
+position = Vector2(2381, 1862)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass415" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1380214954]
+z_index = 1
+position = Vector2(2302, 1903)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass416" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2105035054]
+z_index = 1
+position = Vector2(2231, 1950)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass417" type="Sprite2D" parent="Stuff_In_Forest" unique_id=847055420]
+z_index = 1
+position = Vector2(2171, 1994)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass418" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1961860401]
+z_index = 1
+position = Vector2(2103, 2040)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass419" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1286174172]
+z_index = 1
+position = Vector2(2028, 2081)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass420" type="Sprite2D" parent="Stuff_In_Forest" unique_id=75968713]
+z_index = 1
+position = Vector2(1953, 2123)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass421" type="Sprite2D" parent="Stuff_In_Forest" unique_id=953031840]
+z_index = 1
+position = Vector2(1887, 2165)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass422" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1734289518]
+z_index = 1
+position = Vector2(2729, 1735)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass423" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1483314875]
+z_index = 1
+position = Vector2(2655, 1780)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass424" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1262905351]
+position = Vector2(2798, 1691)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass425" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1646602535]
+z_index = 1
+position = Vector2(2587, 1824)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass426" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1621385171]
+z_index = 1
+position = Vector2(2521, 1867)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass427" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1519417056]
+z_index = 1
+position = Vector2(2449, 1906)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass428" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1064862021]
+z_index = 1
+position = Vector2(2370, 1947)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass429" type="Sprite2D" parent="Stuff_In_Forest" unique_id=861173328]
+z_index = 1
+position = Vector2(2299, 1994)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass430" type="Sprite2D" parent="Stuff_In_Forest" unique_id=997278228]
+z_index = 1
+position = Vector2(2239, 2038)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass431" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1366899452]
+z_index = 1
+position = Vector2(2171, 2084)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass432" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1079040684]
+z_index = 1
+position = Vector2(2096, 2125)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass433" type="Sprite2D" parent="Stuff_In_Forest" unique_id=454993291]
+z_index = 1
+position = Vector2(2021, 2167)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass434" type="Sprite2D" parent="Stuff_In_Forest" unique_id=689232335]
+z_index = 1
+position = Vector2(1955, 2209)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass435" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1366184476]
+z_index = 1
+position = Vector2(2797, 1785)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass436" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1010769156]
+z_index = 1
+position = Vector2(2723, 1830)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass437" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1985504071]
+position = Vector2(2866, 1741)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass438" type="Sprite2D" parent="Stuff_In_Forest" unique_id=719809418]
+z_index = 1
+position = Vector2(2655, 1874)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass439" type="Sprite2D" parent="Stuff_In_Forest" unique_id=888099028]
+z_index = 1
+position = Vector2(2589, 1917)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass440" type="Sprite2D" parent="Stuff_In_Forest" unique_id=496500252]
+z_index = 1
+position = Vector2(2517, 1956)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass441" type="Sprite2D" parent="Stuff_In_Forest" unique_id=304228280]
+z_index = 1
+position = Vector2(2438, 1997)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass442" type="Sprite2D" parent="Stuff_In_Forest" unique_id=738130895]
+z_index = 1
+position = Vector2(2367, 2044)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass443" type="Sprite2D" parent="Stuff_In_Forest" unique_id=303578272]
+z_index = 1
+position = Vector2(2307, 2088)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass444" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1300772056]
+z_index = 1
+position = Vector2(2239, 2134)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass445" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2111500947]
+z_index = 1
+position = Vector2(2164, 2175)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass446" type="Sprite2D" parent="Stuff_In_Forest" unique_id=859556834]
+z_index = 1
+position = Vector2(2089, 2217)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass447" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1630318792]
+z_index = 1
+position = Vector2(2023, 2259)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass448" type="Sprite2D" parent="Stuff_In_Forest" unique_id=885696983]
+z_index = 1
+position = Vector2(2863, 1836)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass449" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1017992103]
+z_index = 1
+position = Vector2(2789, 1881)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass450" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1242468078]
+position = Vector2(2932, 1792)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass451" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1006292302]
+z_index = 1
+position = Vector2(2721, 1925)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass452" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1792959380]
+z_index = 1
+position = Vector2(2655, 1968)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass453" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1999544281]
+z_index = 1
+position = Vector2(2583, 2007)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass454" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1157537969]
+z_index = 1
+position = Vector2(2504, 2048)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass455" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1257501027]
+z_index = 1
+position = Vector2(2433, 2095)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass456" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1446944477]
+z_index = 1
+position = Vector2(2373, 2139)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass457" type="Sprite2D" parent="Stuff_In_Forest" unique_id=668528171]
+z_index = 1
+position = Vector2(2305, 2185)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass458" type="Sprite2D" parent="Stuff_In_Forest" unique_id=322262221]
+z_index = 1
+position = Vector2(2230, 2226)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass459" type="Sprite2D" parent="Stuff_In_Forest" unique_id=948418667]
+z_index = 1
+position = Vector2(2155, 2268)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass460" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1556135947]
+z_index = 1
+position = Vector2(2089, 2310)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass461" type="Sprite2D" parent="Stuff_In_Forest" unique_id=977613115]
+z_index = 1
+position = Vector2(2930, 1889)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass462" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1228803563]
+z_index = 1
+position = Vector2(2856, 1934)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass463" type="Sprite2D" parent="Stuff_In_Forest" unique_id=783468844]
+position = Vector2(2999, 1845)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass464" type="Sprite2D" parent="Stuff_In_Forest" unique_id=681607187]
+z_index = 1
+position = Vector2(2788, 1978)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass465" type="Sprite2D" parent="Stuff_In_Forest" unique_id=376705204]
+z_index = 1
+position = Vector2(2722, 2021)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass466" type="Sprite2D" parent="Stuff_In_Forest" unique_id=97823793]
+z_index = 1
+position = Vector2(2650, 2060)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass467" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1113598299]
+z_index = 1
+position = Vector2(2571, 2101)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass468" type="Sprite2D" parent="Stuff_In_Forest" unique_id=660237684]
+z_index = 1
+position = Vector2(2500, 2148)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass469" type="Sprite2D" parent="Stuff_In_Forest" unique_id=883914240]
+z_index = 1
+position = Vector2(2440, 2192)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass470" type="Sprite2D" parent="Stuff_In_Forest" unique_id=299345822]
+z_index = 1
+position = Vector2(2372, 2238)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass471" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2083897975]
+z_index = 1
+position = Vector2(2297, 2279)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass472" type="Sprite2D" parent="Stuff_In_Forest" unique_id=649418990]
+z_index = 1
+position = Vector2(2222, 2321)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass473" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2147363252]
+z_index = 1
+position = Vector2(2156, 2363)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass474" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1612184978]
+z_index = 1
+position = Vector2(3002, 1932)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass475" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1530779055]
+z_index = 1
+position = Vector2(2928, 1977)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass476" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2002638337]
+position = Vector2(3071, 1888)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass477" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1320101277]
+z_index = 1
+position = Vector2(2860, 2021)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass478" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1357364033]
+z_index = 1
+position = Vector2(2794, 2064)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass479" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1888051297]
+z_index = 1
+position = Vector2(2722, 2103)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass480" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1042655792]
+z_index = 1
+position = Vector2(2643, 2144)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass481" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1076742140]
+z_index = 1
+position = Vector2(2572, 2191)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass482" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1275391366]
+z_index = 1
+position = Vector2(2512, 2235)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass483" type="Sprite2D" parent="Stuff_In_Forest" unique_id=45541503]
+z_index = 1
+position = Vector2(2444, 2281)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass484" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1266369219]
+z_index = 1
+position = Vector2(2369, 2322)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass485" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1147707391]
+z_index = 1
+position = Vector2(2294, 2364)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass486" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1530827292]
+z_index = 1
+position = Vector2(2228, 2406)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass487" type="Sprite2D" parent="Stuff_In_Forest" unique_id=686082832]
+z_index = 1
+position = Vector2(3073, 1971)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass488" type="Sprite2D" parent="Stuff_In_Forest" unique_id=45557007]
+z_index = 1
+position = Vector2(2999, 2016)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass489" type="Sprite2D" parent="Stuff_In_Forest" unique_id=726673406]
+position = Vector2(3142, 1927)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass490" type="Sprite2D" parent="Stuff_In_Forest" unique_id=269521669]
+z_index = 1
+position = Vector2(2931, 2060)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass491" type="Sprite2D" parent="Stuff_In_Forest" unique_id=655361794]
+z_index = 1
+position = Vector2(2865, 2103)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass492" type="Sprite2D" parent="Stuff_In_Forest" unique_id=742066072]
+z_index = 1
+position = Vector2(2793, 2142)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass493" type="Sprite2D" parent="Stuff_In_Forest" unique_id=747916538]
+z_index = 1
+position = Vector2(2714, 2183)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass494" type="Sprite2D" parent="Stuff_In_Forest" unique_id=609575467]
+z_index = 1
+position = Vector2(2643, 2230)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass495" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1002903158]
+z_index = 1
+position = Vector2(2583, 2274)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass496" type="Sprite2D" parent="Stuff_In_Forest" unique_id=403821901]
+z_index = 1
+position = Vector2(2515, 2320)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass497" type="Sprite2D" parent="Stuff_In_Forest" unique_id=481906366]
+z_index = 1
+position = Vector2(2440, 2361)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass498" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1731859989]
+z_index = 1
+position = Vector2(2365, 2403)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass499" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1533896629]
+z_index = 1
+position = Vector2(2299, 2445)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass500" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1909417945]
+z_index = 1
+position = Vector2(3141, 2017)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass501" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1425667096]
+z_index = 1
+position = Vector2(3067, 2062)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass502" type="Sprite2D" parent="Stuff_In_Forest" unique_id=297234193]
+position = Vector2(3210, 1973)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass503" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1277189630]
+z_index = 1
+position = Vector2(2999, 2106)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass504" type="Sprite2D" parent="Stuff_In_Forest" unique_id=777488327]
+z_index = 1
+position = Vector2(2933, 2149)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass505" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1781805353]
+z_index = 1
+position = Vector2(2861, 2188)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass506" type="Sprite2D" parent="Stuff_In_Forest" unique_id=130355294]
+z_index = 1
+position = Vector2(2782, 2229)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass507" type="Sprite2D" parent="Stuff_In_Forest" unique_id=383356697]
+z_index = 1
+position = Vector2(2711, 2276)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass508" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1650370671]
+z_index = 1
+position = Vector2(2651, 2320)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass509" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1967817919]
+z_index = 1
+position = Vector2(2583, 2366)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass510" type="Sprite2D" parent="Stuff_In_Forest" unique_id=347501977]
+z_index = 1
+position = Vector2(2508, 2407)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass511" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1847600870]
+z_index = 1
+position = Vector2(2433, 2449)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass512" type="Sprite2D" parent="Stuff_In_Forest" unique_id=638896902]
+z_index = 1
+position = Vector2(2367, 2491)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass513" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2080080194]
+z_index = 1
+position = Vector2(3209, 2061)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass514" type="Sprite2D" parent="Stuff_In_Forest" unique_id=35225211]
+z_index = 1
+position = Vector2(3135, 2106)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass515" type="Sprite2D" parent="Stuff_In_Forest" unique_id=970283402]
+position = Vector2(3278, 2017)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass516" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1995983317]
+z_index = 1
+position = Vector2(3067, 2150)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass517" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2071868350]
+z_index = 1
+position = Vector2(3001, 2193)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass518" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1357978081]
+z_index = 1
+position = Vector2(2929, 2232)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass519" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1988444531]
+z_index = 1
+position = Vector2(2850, 2273)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass520" type="Sprite2D" parent="Stuff_In_Forest" unique_id=524062243]
+z_index = 1
+position = Vector2(2779, 2320)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass521" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1983118689]
+z_index = 1
+position = Vector2(2719, 2364)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass522" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1897105573]
+z_index = 1
+position = Vector2(2651, 2410)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass523" type="Sprite2D" parent="Stuff_In_Forest" unique_id=803712832]
+z_index = 1
+position = Vector2(2576, 2451)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass524" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1754179086]
+z_index = 1
+position = Vector2(2501, 2493)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass525" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1502327083]
+z_index = 1
+position = Vector2(2435, 2535)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass526" type="Sprite2D" parent="Stuff_In_Forest" unique_id=688015646]
+z_index = 1
+position = Vector2(3277, 2111)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass527" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1189419914]
+z_index = 1
+position = Vector2(3203, 2156)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass528" type="Sprite2D" parent="Stuff_In_Forest" unique_id=207245237]
+position = Vector2(3346, 2067)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass529" type="Sprite2D" parent="Stuff_In_Forest" unique_id=542594616]
+z_index = 1
+position = Vector2(3135, 2200)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass530" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1890668950]
+z_index = 1
+position = Vector2(3069, 2243)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass531" type="Sprite2D" parent="Stuff_In_Forest" unique_id=88225881]
+z_index = 1
+position = Vector2(2997, 2282)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass532" type="Sprite2D" parent="Stuff_In_Forest" unique_id=508280783]
+z_index = 1
+position = Vector2(2918, 2323)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass533" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1020970918]
+z_index = 1
+position = Vector2(2847, 2370)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass534" type="Sprite2D" parent="Stuff_In_Forest" unique_id=162597229]
+z_index = 1
+position = Vector2(2787, 2414)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass535" type="Sprite2D" parent="Stuff_In_Forest" unique_id=819794652]
+z_index = 1
+position = Vector2(2719, 2460)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass536" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1868012726]
+z_index = 1
+position = Vector2(2644, 2501)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass537" type="Sprite2D" parent="Stuff_In_Forest" unique_id=435707320]
+z_index = 1
+position = Vector2(2569, 2543)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass538" type="Sprite2D" parent="Stuff_In_Forest" unique_id=204601787]
+z_index = 1
+position = Vector2(2503, 2585)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass539" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1155188815]
+z_index = 1
+position = Vector2(3343, 2162)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass540" type="Sprite2D" parent="Stuff_In_Forest" unique_id=946359980]
+z_index = 1
+position = Vector2(3269, 2207)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass541" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1101816668]
+position = Vector2(3412, 2118)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass542" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1590373691]
+z_index = 1
+position = Vector2(3201, 2251)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass543" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2039412793]
+z_index = 1
+position = Vector2(3135, 2294)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass544" type="Sprite2D" parent="Stuff_In_Forest" unique_id=249321444]
+z_index = 1
+position = Vector2(3063, 2333)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass545" type="Sprite2D" parent="Stuff_In_Forest" unique_id=484198568]
+z_index = 1
+position = Vector2(2984, 2374)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass546" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2113574332]
+z_index = 1
+position = Vector2(2913, 2421)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass547" type="Sprite2D" parent="Stuff_In_Forest" unique_id=357459951]
+z_index = 1
+position = Vector2(2853, 2465)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass548" type="Sprite2D" parent="Stuff_In_Forest" unique_id=112938511]
+z_index = 1
+position = Vector2(2785, 2511)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass549" type="Sprite2D" parent="Stuff_In_Forest" unique_id=731686470]
+z_index = 1
+position = Vector2(2710, 2552)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass550" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1870924269]
+z_index = 1
+position = Vector2(2635, 2594)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass551" type="Sprite2D" parent="Stuff_In_Forest" unique_id=191350572]
+z_index = 1
+position = Vector2(2569, 2636)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass552" type="Sprite2D" parent="Stuff_In_Forest" unique_id=848667000]
+z_index = 1
+position = Vector2(3410, 2215)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass553" type="Sprite2D" parent="Stuff_In_Forest" unique_id=211479999]
+z_index = 1
+position = Vector2(3336, 2260)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass554" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1330830307]
+position = Vector2(3479, 2171)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass555" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1488236508]
+z_index = 1
+position = Vector2(3268, 2304)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass556" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1885301683]
+z_index = 1
+position = Vector2(3202, 2347)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass557" type="Sprite2D" parent="Stuff_In_Forest" unique_id=892754049]
+z_index = 1
+position = Vector2(3130, 2386)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass558" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1567416939]
+z_index = 1
+position = Vector2(3051, 2427)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass559" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1282781531]
+z_index = 1
+position = Vector2(2980, 2474)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass560" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1544262970]
+z_index = 1
+position = Vector2(2920, 2518)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass561" type="Sprite2D" parent="Stuff_In_Forest" unique_id=559197249]
+z_index = 1
+position = Vector2(2852, 2564)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass562" type="Sprite2D" parent="Stuff_In_Forest" unique_id=504362090]
+z_index = 1
+position = Vector2(2777, 2605)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass563" type="Sprite2D" parent="Stuff_In_Forest" unique_id=318734389]
+z_index = 1
+position = Vector2(2702, 2647)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass564" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2088986953]
+z_index = 1
+position = Vector2(2636, 2689)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass565" type="Sprite2D" parent="Stuff_In_Forest" unique_id=665410847]
+z_index = 1
+position = Vector2(3482, 2258)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass566" type="Sprite2D" parent="Stuff_In_Forest" unique_id=395139880]
+z_index = 1
+position = Vector2(3408, 2303)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass567" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1734015879]
+position = Vector2(3551, 2214)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass568" type="Sprite2D" parent="Stuff_In_Forest" unique_id=159475254]
+z_index = 1
+position = Vector2(3340, 2347)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass569" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1360973372]
+z_index = 1
+position = Vector2(3274, 2390)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass570" type="Sprite2D" parent="Stuff_In_Forest" unique_id=456870025]
+z_index = 1
+position = Vector2(3202, 2429)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass571" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1914462378]
+z_index = 1
+position = Vector2(3123, 2470)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass572" type="Sprite2D" parent="Stuff_In_Forest" unique_id=654550888]
+z_index = 1
+position = Vector2(3052, 2517)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass573" type="Sprite2D" parent="Stuff_In_Forest" unique_id=740391173]
+z_index = 1
+position = Vector2(2992, 2561)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass574" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1157702312]
+z_index = 1
+position = Vector2(2924, 2607)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass575" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1684298006]
+z_index = 1
+position = Vector2(2849, 2648)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass576" type="Sprite2D" parent="Stuff_In_Forest" unique_id=119781357]
+z_index = 1
+position = Vector2(2774, 2690)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass577" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1923771698]
+z_index = 1
+position = Vector2(2708, 2732)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass225" type="Sprite2D" parent="Stuff_In_Forest" unique_id=251785710]
+position = Vector2(-195, 840)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass226" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1946740451]
+z_index = -1
+position = Vector2(-270, 796)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass578" type="Sprite2D" parent="Stuff_In_Forest" unique_id=231541527]
+z_index = 1
+position = Vector2(-181, 934)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass579" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1721071163]
+z_index = 1
+position = Vector2(-111, 982)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass580" type="Sprite2D" parent="Stuff_In_Forest" unique_id=170643510]
+z_index = 1
+position = Vector2(-39, 1020)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass581" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1476202078]
+z_index = 1
+position = Vector2(29, 1061)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass582" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1741067288]
+z_index = 1
+position = Vector2(97, 1104)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass583" type="Sprite2D" parent="Stuff_In_Forest" unique_id=841808634]
+z_index = 1
+position = Vector2(171, 1148)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass584" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1601857097]
+z_index = 1
+position = Vector2(240, 1186)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass585" type="Sprite2D" parent="Stuff_In_Forest" unique_id=507011936]
+z_index = 1
+position = Vector2(317, 1229)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass586" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1849252199]
+z_index = 1
+position = Vector2(383, 1276)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass587" type="Sprite2D" parent="Stuff_In_Forest" unique_id=38915698]
+z_index = 1
+position = Vector2(453, 1317)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass588" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1187822345]
+z_index = 1
+position = Vector2(527, 1357)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass589" type="Sprite2D" parent="Stuff_In_Forest" unique_id=742931369]
+z_index = 1
+position = Vector2(593, 1400)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass590" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1929870340]
+z_index = 1
+position = Vector2(651, 1436)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass591" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1819066636]
+z_index = 1
+position = Vector2(723, 1481)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass592" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1660723510]
+z_index = 1
+position = Vector2(791, 1524)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass593" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1976388773]
+z_index = 1
+position = Vector2(859, 1570)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass594" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1429315316]
+z_index = 1
+position = Vector2(927, 1614)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass595" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1195550317]
+z_index = 1
+position = Vector2(995, 1664)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass596" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1012263119]
+z_index = 1
+position = Vector2(1061, 1715)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass597" type="Sprite2D" parent="Stuff_In_Forest" unique_id=40247838]
+z_index = 1
+position = Vector2(1128, 1763)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass598" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1821167809]
+z_index = 1
+position = Vector2(1207, 1800)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass599" type="Sprite2D" parent="Stuff_In_Forest" unique_id=94102542]
+z_index = 1
+position = Vector2(1278, 1841)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass600" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1851361401]
+z_index = 1
+position = Vector2(1348, 1887)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass601" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1261526637]
+z_index = 1
+position = Vector2(1416, 1931)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass602" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1578655401]
+z_index = 1
+position = Vector2(1484, 1981)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass603" type="Sprite2D" parent="Stuff_In_Forest" unique_id=327666711]
+z_index = 1
+position = Vector2(1550, 2032)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass604" type="Sprite2D" parent="Stuff_In_Forest" unique_id=286069978]
+z_index = 1
+position = Vector2(1617, 2085)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass605" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2025490402]
+z_index = 1
+position = Vector2(1689, 2128)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass606" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1268854533]
+z_index = 1
+position = Vector2(1760, 2167)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass607" type="Sprite2D" parent="Stuff_In_Forest" unique_id=385666363]
+z_index = 1
+position = Vector2(1828, 2213)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass608" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1158002061]
+z_index = 1
+position = Vector2(1896, 2257)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass609" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1533581750]
+z_index = 1
+position = Vector2(1964, 2307)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass610" type="Sprite2D" parent="Stuff_In_Forest" unique_id=469886131]
+z_index = 1
+position = Vector2(2030, 2358)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass611" type="Sprite2D" parent="Stuff_In_Forest" unique_id=890826792]
+z_index = 1
+position = Vector2(2097, 2411)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass612" type="Sprite2D" parent="Stuff_In_Forest" unique_id=573198183]
+z_index = 1
+position = Vector2(2169, 2454)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass613" type="Sprite2D" parent="Stuff_In_Forest" unique_id=972161017]
+z_index = 1
+position = Vector2(2240, 2493)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass614" type="Sprite2D" parent="Stuff_In_Forest" unique_id=313935795]
+z_index = 1
+position = Vector2(2308, 2539)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass615" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1430415098]
+z_index = 1
+position = Vector2(2376, 2583)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass616" type="Sprite2D" parent="Stuff_In_Forest" unique_id=300490333]
+z_index = 1
+position = Vector2(2444, 2633)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass617" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1562662135]
+z_index = 1
+position = Vector2(2510, 2684)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass618" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1844769980]
+z_index = 1
+position = Vector2(2577, 2737)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass619" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2127488063]
+z_index = 1
+position = Vector2(2649, 2780)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass620" type="Sprite2D" parent="Stuff_In_Forest" unique_id=749671875]
+position = Vector2(-254, 888)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass621" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1369002887]
+z_index = -1
+position = Vector2(-329, 844)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass622" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1928220046]
+z_index = 1
+position = Vector2(-240, 982)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass623" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1672712230]
+z_index = 1
+position = Vector2(-170, 1030)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass624" type="Sprite2D" parent="Stuff_In_Forest" unique_id=255340863]
+z_index = 1
+position = Vector2(-98, 1068)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass625" type="Sprite2D" parent="Stuff_In_Forest" unique_id=748290110]
+z_index = 1
+position = Vector2(-30, 1109)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass626" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1676685773]
+z_index = 1
+position = Vector2(38, 1152)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass627" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1741122498]
+z_index = 1
+position = Vector2(112, 1196)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass628" type="Sprite2D" parent="Stuff_In_Forest" unique_id=416134242]
+z_index = 1
+position = Vector2(181, 1234)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass629" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1777060301]
+z_index = 1
+position = Vector2(258, 1277)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass630" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2093814196]
+z_index = 1
+position = Vector2(324, 1324)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass631" type="Sprite2D" parent="Stuff_In_Forest" unique_id=64343482]
+z_index = 1
+position = Vector2(394, 1365)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass632" type="Sprite2D" parent="Stuff_In_Forest" unique_id=836678345]
+z_index = 1
+position = Vector2(468, 1405)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass633" type="Sprite2D" parent="Stuff_In_Forest" unique_id=42121831]
+z_index = 1
+position = Vector2(534, 1448)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass634" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1482340671]
+z_index = 1
+position = Vector2(592, 1484)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass635" type="Sprite2D" parent="Stuff_In_Forest" unique_id=922640938]
+z_index = 1
+position = Vector2(664, 1529)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass636" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1796561289]
+z_index = 1
+position = Vector2(732, 1572)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass637" type="Sprite2D" parent="Stuff_In_Forest" unique_id=214813119]
+z_index = 1
+position = Vector2(800, 1618)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass638" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1771055730]
+z_index = 1
+position = Vector2(868, 1662)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass639" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2061757174]
+z_index = 1
+position = Vector2(936, 1712)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass640" type="Sprite2D" parent="Stuff_In_Forest" unique_id=213102729]
+z_index = 1
+position = Vector2(1002, 1763)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass641" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1932994333]
+z_index = 1
+position = Vector2(1069, 1811)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass642" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1007906623]
+z_index = 1
+position = Vector2(1148, 1848)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass643" type="Sprite2D" parent="Stuff_In_Forest" unique_id=703063049]
+z_index = 1
+position = Vector2(1219, 1889)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass644" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1106667274]
+z_index = 1
+position = Vector2(1289, 1935)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass645" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1011807038]
+z_index = 1
+position = Vector2(1357, 1979)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass646" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1956645342]
+z_index = 1
+position = Vector2(1425, 2029)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass647" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1770522725]
+z_index = 1
+position = Vector2(1491, 2080)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass648" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1763872358]
+z_index = 1
+position = Vector2(1558, 2133)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass649" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1225242048]
+z_index = 1
+position = Vector2(1630, 2176)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass650" type="Sprite2D" parent="Stuff_In_Forest" unique_id=818194782]
+z_index = 1
+position = Vector2(1701, 2215)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass651" type="Sprite2D" parent="Stuff_In_Forest" unique_id=939472271]
+z_index = 1
+position = Vector2(1769, 2261)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass652" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2130723698]
+z_index = 1
+position = Vector2(1837, 2305)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass653" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1012726517]
+z_index = 1
+position = Vector2(1905, 2355)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass654" type="Sprite2D" parent="Stuff_In_Forest" unique_id=103378727]
+z_index = 1
+position = Vector2(1971, 2406)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass655" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1220534074]
+z_index = 1
+position = Vector2(2038, 2459)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass656" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1367749048]
+z_index = 1
+position = Vector2(2110, 2502)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass657" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1127835380]
+z_index = 1
+position = Vector2(2181, 2541)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass658" type="Sprite2D" parent="Stuff_In_Forest" unique_id=663609172]
+z_index = 1
+position = Vector2(2249, 2587)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass659" type="Sprite2D" parent="Stuff_In_Forest" unique_id=239863944]
+z_index = 1
+position = Vector2(2317, 2631)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass660" type="Sprite2D" parent="Stuff_In_Forest" unique_id=178771103]
+z_index = 1
+position = Vector2(2385, 2681)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass661" type="Sprite2D" parent="Stuff_In_Forest" unique_id=941331069]
+z_index = 1
+position = Vector2(2451, 2732)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass662" type="Sprite2D" parent="Stuff_In_Forest" unique_id=812551175]
+z_index = 1
+position = Vector2(2518, 2785)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass663" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1268299000]
+z_index = 1
+position = Vector2(2590, 2828)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass664" type="Sprite2D" parent="Stuff_In_Forest" unique_id=430172206]
+position = Vector2(-313, 936)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass665" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1878060173]
+z_index = -1
+position = Vector2(-388, 892)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass666" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2009813113]
+z_index = 1
+position = Vector2(-295, 1026)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass667" type="Sprite2D" parent="Stuff_In_Forest" unique_id=269673651]
+z_index = 1
+position = Vector2(-225, 1074)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass668" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1327373590]
+z_index = 1
+position = Vector2(-153, 1112)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass669" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1880446876]
+z_index = 1
+position = Vector2(-85, 1153)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass670" type="Sprite2D" parent="Stuff_In_Forest" unique_id=791494357]
+z_index = 1
+position = Vector2(-17, 1196)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass671" type="Sprite2D" parent="Stuff_In_Forest" unique_id=616543438]
+z_index = 1
+position = Vector2(57, 1240)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass672" type="Sprite2D" parent="Stuff_In_Forest" unique_id=913865312]
+z_index = 1
+position = Vector2(126, 1278)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass673" type="Sprite2D" parent="Stuff_In_Forest" unique_id=671607725]
+z_index = 1
+position = Vector2(203, 1321)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass674" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1307495727]
+z_index = 1
+position = Vector2(269, 1368)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass675" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1946312]
+z_index = 1
+position = Vector2(339, 1409)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass676" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1356360225]
+z_index = 1
+position = Vector2(413, 1449)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass677" type="Sprite2D" parent="Stuff_In_Forest" unique_id=679805669]
+z_index = 1
+position = Vector2(479, 1492)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass678" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1082238944]
+z_index = 1
+position = Vector2(537, 1528)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass679" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1575536626]
+z_index = 1
+position = Vector2(609, 1573)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass680" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2068942562]
+z_index = 1
+position = Vector2(677, 1616)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass681" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1911770283]
+z_index = 1
+position = Vector2(745, 1662)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass682" type="Sprite2D" parent="Stuff_In_Forest" unique_id=728152978]
+z_index = 1
+position = Vector2(813, 1706)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass683" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1401491834]
+z_index = 1
+position = Vector2(881, 1756)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass684" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1470518413]
+z_index = 1
+position = Vector2(947, 1807)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass685" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1513659979]
+z_index = 1
+position = Vector2(1014, 1855)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass686" type="Sprite2D" parent="Stuff_In_Forest" unique_id=484438750]
+z_index = 1
+position = Vector2(1093, 1892)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass687" type="Sprite2D" parent="Stuff_In_Forest" unique_id=731780945]
+z_index = 1
+position = Vector2(1164, 1933)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass688" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1298770967]
+z_index = 1
+position = Vector2(1234, 1979)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass689" type="Sprite2D" parent="Stuff_In_Forest" unique_id=667111524]
+z_index = 1
+position = Vector2(1302, 2023)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass690" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1273094304]
+z_index = 1
+position = Vector2(1370, 2073)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass691" type="Sprite2D" parent="Stuff_In_Forest" unique_id=6908375]
+z_index = 1
+position = Vector2(1436, 2124)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass692" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1583976620]
+z_index = 1
+position = Vector2(1503, 2177)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass693" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1145117338]
+z_index = 1
+position = Vector2(1575, 2220)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass694" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1351751911]
+z_index = 1
+position = Vector2(1646, 2259)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass695" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1493237149]
+z_index = 1
+position = Vector2(1714, 2305)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass696" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2123773406]
+z_index = 1
+position = Vector2(1782, 2349)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass697" type="Sprite2D" parent="Stuff_In_Forest" unique_id=229183651]
+z_index = 1
+position = Vector2(1850, 2399)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass698" type="Sprite2D" parent="Stuff_In_Forest" unique_id=741429664]
+z_index = 1
+position = Vector2(1916, 2450)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass699" type="Sprite2D" parent="Stuff_In_Forest" unique_id=704087711]
+z_index = 1
+position = Vector2(1983, 2503)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass700" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1817516128]
+z_index = 1
+position = Vector2(2055, 2546)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass701" type="Sprite2D" parent="Stuff_In_Forest" unique_id=449427356]
+z_index = 1
+position = Vector2(2126, 2585)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass702" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1188865667]
+z_index = 1
+position = Vector2(2194, 2631)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass703" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1592578042]
+z_index = 1
+position = Vector2(2262, 2675)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass704" type="Sprite2D" parent="Stuff_In_Forest" unique_id=107977843]
+z_index = 1
+position = Vector2(2330, 2725)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass705" type="Sprite2D" parent="Stuff_In_Forest" unique_id=859677814]
+z_index = 1
+position = Vector2(2396, 2776)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass706" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1503010397]
+z_index = 1
+position = Vector2(2463, 2829)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass707" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1185384190]
+z_index = 1
+position = Vector2(2535, 2872)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass708" type="Sprite2D" parent="Stuff_In_Forest" unique_id=88234875]
+position = Vector2(-368, 980)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass709" type="Sprite2D" parent="Stuff_In_Forest" unique_id=558397695]
+z_index = -1
+position = Vector2(-443, 936)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass710" type="Sprite2D" parent="Stuff_In_Forest" unique_id=242202836]
+z_index = 1
+position = Vector2(-363, 1070)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass711" type="Sprite2D" parent="Stuff_In_Forest" unique_id=196071079]
+z_index = 1
+position = Vector2(-293, 1118)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass712" type="Sprite2D" parent="Stuff_In_Forest" unique_id=369485469]
+z_index = 1
+position = Vector2(-221, 1156)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass713" type="Sprite2D" parent="Stuff_In_Forest" unique_id=669980531]
+z_index = 1
+position = Vector2(-153, 1197)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass714" type="Sprite2D" parent="Stuff_In_Forest" unique_id=537672960]
+z_index = 1
+position = Vector2(-85, 1240)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass715" type="Sprite2D" parent="Stuff_In_Forest" unique_id=760363636]
+z_index = 1
+position = Vector2(-11, 1284)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass716" type="Sprite2D" parent="Stuff_In_Forest" unique_id=580356352]
+z_index = 1
+position = Vector2(58, 1322)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass717" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2006513496]
+z_index = 1
+position = Vector2(135, 1365)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass718" type="Sprite2D" parent="Stuff_In_Forest" unique_id=140530707]
+z_index = 1
+position = Vector2(201, 1412)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass719" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1050788280]
+z_index = 1
+position = Vector2(271, 1453)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass720" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1307800436]
+z_index = 1
+position = Vector2(345, 1493)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass721" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1157340381]
+z_index = 1
+position = Vector2(411, 1536)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass722" type="Sprite2D" parent="Stuff_In_Forest" unique_id=538476409]
+z_index = 1
+position = Vector2(469, 1572)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass723" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1928366808]
+z_index = 1
+position = Vector2(541, 1617)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass724" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1731485733]
+z_index = 1
+position = Vector2(609, 1660)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass725" type="Sprite2D" parent="Stuff_In_Forest" unique_id=136388283]
+z_index = 1
+position = Vector2(677, 1706)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass726" type="Sprite2D" parent="Stuff_In_Forest" unique_id=452510887]
+z_index = 1
+position = Vector2(745, 1750)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass727" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1711887789]
+z_index = 1
+position = Vector2(813, 1800)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass728" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1033519917]
+z_index = 1
+position = Vector2(879, 1851)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass729" type="Sprite2D" parent="Stuff_In_Forest" unique_id=149759476]
+z_index = 1
+position = Vector2(946, 1899)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass730" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1716505783]
+z_index = 1
+position = Vector2(1025, 1936)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass731" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1418655972]
+z_index = 1
+position = Vector2(1096, 1977)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass732" type="Sprite2D" parent="Stuff_In_Forest" unique_id=359312962]
+z_index = 1
+position = Vector2(1166, 2023)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass733" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1335815391]
+z_index = 1
+position = Vector2(1234, 2067)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass734" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1954781380]
+z_index = 1
+position = Vector2(1302, 2117)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass735" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1314273450]
+z_index = 1
+position = Vector2(1368, 2168)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass736" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1182000665]
+z_index = 1
+position = Vector2(1435, 2221)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass737" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1241271785]
+z_index = 1
+position = Vector2(1507, 2264)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass738" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1383892121]
+z_index = 1
+position = Vector2(1578, 2303)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass739" type="Sprite2D" parent="Stuff_In_Forest" unique_id=996025987]
+z_index = 1
+position = Vector2(1646, 2349)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass740" type="Sprite2D" parent="Stuff_In_Forest" unique_id=491272334]
+z_index = 1
+position = Vector2(1714, 2393)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass741" type="Sprite2D" parent="Stuff_In_Forest" unique_id=689131125]
+z_index = 1
+position = Vector2(1782, 2443)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass742" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1484297576]
+z_index = 1
+position = Vector2(1848, 2494)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass743" type="Sprite2D" parent="Stuff_In_Forest" unique_id=918463567]
+z_index = 1
+position = Vector2(1915, 2547)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass744" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1289972734]
+z_index = 1
+position = Vector2(1987, 2590)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass745" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1664639723]
+z_index = 1
+position = Vector2(2058, 2629)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass746" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1470049311]
+z_index = 1
+position = Vector2(2126, 2675)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass747" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1228368433]
+z_index = 1
+position = Vector2(2194, 2719)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass748" type="Sprite2D" parent="Stuff_In_Forest" unique_id=525945994]
+z_index = 1
+position = Vector2(2262, 2769)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass749" type="Sprite2D" parent="Stuff_In_Forest" unique_id=884081093]
+z_index = 1
+position = Vector2(2328, 2820)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass750" type="Sprite2D" parent="Stuff_In_Forest" unique_id=386465290]
+z_index = 1
+position = Vector2(2395, 2873)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass751" type="Sprite2D" parent="Stuff_In_Forest" unique_id=538545187]
+z_index = 1
+position = Vector2(2467, 2916)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass752" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1575720203]
+position = Vector2(-436, 1024)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass753" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1795519398]
+z_index = -1
+position = Vector2(-511, 980)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass754" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1365260032]
+z_index = 1
+position = Vector2(-425, 1103)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass755" type="Sprite2D" parent="Stuff_In_Forest" unique_id=687995648]
+z_index = 1
+position = Vector2(-355, 1151)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass756" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1753981186]
+z_index = 1
+position = Vector2(-283, 1189)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass757" type="Sprite2D" parent="Stuff_In_Forest" unique_id=400366447]
+z_index = 1
+position = Vector2(-215, 1230)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass758" type="Sprite2D" parent="Stuff_In_Forest" unique_id=684981055]
+z_index = 1
+position = Vector2(-147, 1273)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass759" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1307413567]
+z_index = 1
+position = Vector2(-73, 1317)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass760" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1891022979]
+z_index = 1
+position = Vector2(-4, 1355)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass761" type="Sprite2D" parent="Stuff_In_Forest" unique_id=639092767]
+z_index = 1
+position = Vector2(73, 1398)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass762" type="Sprite2D" parent="Stuff_In_Forest" unique_id=384122539]
+z_index = 1
+position = Vector2(139, 1445)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass763" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1838739061]
+z_index = 1
+position = Vector2(209, 1486)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass764" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1775567922]
+z_index = 1
+position = Vector2(283, 1526)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass765" type="Sprite2D" parent="Stuff_In_Forest" unique_id=304327877]
+z_index = 1
+position = Vector2(349, 1569)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass766" type="Sprite2D" parent="Stuff_In_Forest" unique_id=345210603]
+z_index = 1
+position = Vector2(407, 1605)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass767" type="Sprite2D" parent="Stuff_In_Forest" unique_id=995401617]
+z_index = 1
+position = Vector2(479, 1650)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass768" type="Sprite2D" parent="Stuff_In_Forest" unique_id=55783746]
+z_index = 1
+position = Vector2(547, 1693)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass769" type="Sprite2D" parent="Stuff_In_Forest" unique_id=184801609]
+z_index = 1
+position = Vector2(615, 1739)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass770" type="Sprite2D" parent="Stuff_In_Forest" unique_id=276107404]
+z_index = 1
+position = Vector2(683, 1783)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass771" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2095833099]
+z_index = 1
+position = Vector2(751, 1833)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass772" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2087212041]
+z_index = 1
+position = Vector2(817, 1884)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass773" type="Sprite2D" parent="Stuff_In_Forest" unique_id=806205511]
+z_index = 1
+position = Vector2(884, 1932)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass774" type="Sprite2D" parent="Stuff_In_Forest" unique_id=193352172]
+z_index = 1
+position = Vector2(963, 1969)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass775" type="Sprite2D" parent="Stuff_In_Forest" unique_id=811357837]
+z_index = 1
+position = Vector2(1034, 2010)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass776" type="Sprite2D" parent="Stuff_In_Forest" unique_id=61536521]
+z_index = 1
+position = Vector2(1104, 2056)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass777" type="Sprite2D" parent="Stuff_In_Forest" unique_id=838809199]
+z_index = 1
+position = Vector2(1172, 2100)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass778" type="Sprite2D" parent="Stuff_In_Forest" unique_id=998578332]
+z_index = 1
+position = Vector2(1240, 2150)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass779" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1456710595]
+z_index = 1
+position = Vector2(1306, 2201)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass780" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1917870192]
+z_index = 1
+position = Vector2(1373, 2254)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass781" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1099978044]
+z_index = 1
+position = Vector2(1445, 2297)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass782" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1423026444]
+z_index = 1
+position = Vector2(1516, 2336)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass783" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1251506758]
+z_index = 1
+position = Vector2(1584, 2382)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass784" type="Sprite2D" parent="Stuff_In_Forest" unique_id=168732808]
+z_index = 1
+position = Vector2(1652, 2426)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass785" type="Sprite2D" parent="Stuff_In_Forest" unique_id=607746934]
+z_index = 1
+position = Vector2(1720, 2476)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass786" type="Sprite2D" parent="Stuff_In_Forest" unique_id=5323514]
+z_index = 1
+position = Vector2(1786, 2527)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass787" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1071004678]
+z_index = 1
+position = Vector2(1853, 2580)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass788" type="Sprite2D" parent="Stuff_In_Forest" unique_id=484571279]
+z_index = 1
+position = Vector2(1925, 2623)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass789" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1688215491]
+z_index = 1
+position = Vector2(1996, 2662)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass790" type="Sprite2D" parent="Stuff_In_Forest" unique_id=475269245]
+z_index = 1
+position = Vector2(2064, 2708)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass791" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1507912246]
+z_index = 1
+position = Vector2(2132, 2752)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass792" type="Sprite2D" parent="Stuff_In_Forest" unique_id=410580975]
+z_index = 1
+position = Vector2(2200, 2802)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass793" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1523610456]
+z_index = 1
+position = Vector2(2266, 2853)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass794" type="Sprite2D" parent="Stuff_In_Forest" unique_id=248024529]
+z_index = 1
+position = Vector2(2333, 2906)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass795" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1151103882]
+z_index = 1
+position = Vector2(2405, 2949)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass796" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2093317111]
+position = Vector2(-498, 1057)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass797" type="Sprite2D" parent="Stuff_In_Forest" unique_id=616656874]
+z_index = -1
+position = Vector2(-573, 1013)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass798" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1245081858]
+z_index = 1
+position = Vector2(-491, 1151)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass799" type="Sprite2D" parent="Stuff_In_Forest" unique_id=957959213]
+z_index = 1
+position = Vector2(-421, 1199)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass800" type="Sprite2D" parent="Stuff_In_Forest" unique_id=757134291]
+z_index = 1
+position = Vector2(-349, 1237)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass801" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1050628577]
+z_index = 1
+position = Vector2(-281, 1278)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass802" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1452330486]
+z_index = 1
+position = Vector2(-213, 1321)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass803" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1778570855]
+z_index = 1
+position = Vector2(-139, 1365)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass804" type="Sprite2D" parent="Stuff_In_Forest" unique_id=531969247]
+z_index = 1
+position = Vector2(-70, 1403)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass805" type="Sprite2D" parent="Stuff_In_Forest" unique_id=176609436]
+z_index = 1
+position = Vector2(7, 1446)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass806" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1701557390]
+z_index = 1
+position = Vector2(73, 1493)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass807" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1781218469]
+z_index = 1
+position = Vector2(143, 1534)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass808" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2048045780]
+z_index = 1
+position = Vector2(217, 1574)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass809" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1770062261]
+z_index = 1
+position = Vector2(283, 1617)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass810" type="Sprite2D" parent="Stuff_In_Forest" unique_id=648248181]
+z_index = 1
+position = Vector2(341, 1653)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass811" type="Sprite2D" parent="Stuff_In_Forest" unique_id=150214156]
+z_index = 1
+position = Vector2(413, 1698)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass812" type="Sprite2D" parent="Stuff_In_Forest" unique_id=392319237]
+z_index = 1
+position = Vector2(481, 1741)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass813" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1029532525]
+z_index = 1
+position = Vector2(549, 1787)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass814" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1717982363]
+z_index = 1
+position = Vector2(617, 1831)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass815" type="Sprite2D" parent="Stuff_In_Forest" unique_id=57601440]
+z_index = 1
+position = Vector2(685, 1881)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass816" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1944084717]
+z_index = 1
+position = Vector2(751, 1932)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass817" type="Sprite2D" parent="Stuff_In_Forest" unique_id=880785969]
+z_index = 1
+position = Vector2(818, 1980)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass818" type="Sprite2D" parent="Stuff_In_Forest" unique_id=524036374]
+z_index = 1
+position = Vector2(897, 2017)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass819" type="Sprite2D" parent="Stuff_In_Forest" unique_id=201850589]
+z_index = 1
+position = Vector2(968, 2058)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass820" type="Sprite2D" parent="Stuff_In_Forest" unique_id=135476770]
+z_index = 1
+position = Vector2(1038, 2104)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass821" type="Sprite2D" parent="Stuff_In_Forest" unique_id=242846663]
+z_index = 1
+position = Vector2(1106, 2148)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass822" type="Sprite2D" parent="Stuff_In_Forest" unique_id=541355155]
+z_index = 1
+position = Vector2(1174, 2198)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass823" type="Sprite2D" parent="Stuff_In_Forest" unique_id=572487205]
+z_index = 1
+position = Vector2(1240, 2249)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass824" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1074931063]
+z_index = 1
+position = Vector2(1307, 2302)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass825" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2110893209]
+z_index = 1
+position = Vector2(1379, 2345)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass826" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1236548051]
+z_index = 1
+position = Vector2(1450, 2384)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass827" type="Sprite2D" parent="Stuff_In_Forest" unique_id=872157301]
+z_index = 1
+position = Vector2(1518, 2430)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass828" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1388146968]
+z_index = 1
+position = Vector2(1586, 2474)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass829" type="Sprite2D" parent="Stuff_In_Forest" unique_id=31109439]
+z_index = 1
+position = Vector2(1654, 2524)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass830" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1431178177]
+z_index = 1
+position = Vector2(1720, 2575)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass831" type="Sprite2D" parent="Stuff_In_Forest" unique_id=932292425]
+z_index = 1
+position = Vector2(1787, 2628)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass832" type="Sprite2D" parent="Stuff_In_Forest" unique_id=856977922]
+z_index = 1
+position = Vector2(1859, 2671)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass833" type="Sprite2D" parent="Stuff_In_Forest" unique_id=2065489277]
+z_index = 1
+position = Vector2(1930, 2710)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass834" type="Sprite2D" parent="Stuff_In_Forest" unique_id=799011481]
+z_index = 1
+position = Vector2(1998, 2756)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass835" type="Sprite2D" parent="Stuff_In_Forest" unique_id=3202652]
+z_index = 1
+position = Vector2(2066, 2800)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass836" type="Sprite2D" parent="Stuff_In_Forest" unique_id=926238001]
+z_index = 1
+position = Vector2(2134, 2850)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass837" type="Sprite2D" parent="Stuff_In_Forest" unique_id=82822877]
+z_index = 1
+position = Vector2(2200, 2901)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass838" type="Sprite2D" parent="Stuff_In_Forest" unique_id=573599745]
+z_index = 1
+position = Vector2(2267, 2954)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass839" type="Sprite2D" parent="Stuff_In_Forest" unique_id=656165927]
+z_index = 1
+position = Vector2(2339, 2997)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass840" type="Sprite2D" parent="Stuff_In_Forest" unique_id=829460541]
+position = Vector2(-564, 1105)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass841" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1098838959]
+z_index = -1
+position = Vector2(-639, 1061)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass842" type="Sprite2D" parent="Stuff_In_Forest" unique_id=61273682]
+z_index = 1
+position = Vector2(-553, 1195)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass843" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1855202099]
+z_index = 1
+position = Vector2(-483, 1243)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass844" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1558498413]
+z_index = 1
+position = Vector2(-411, 1281)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass845" type="Sprite2D" parent="Stuff_In_Forest" unique_id=375236315]
+z_index = 1
+position = Vector2(-343, 1322)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass846" type="Sprite2D" parent="Stuff_In_Forest" unique_id=154693770]
+z_index = 1
+position = Vector2(-275, 1365)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass847" type="Sprite2D" parent="Stuff_In_Forest" unique_id=226076334]
+z_index = 1
+position = Vector2(-201, 1409)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass848" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1714014459]
+z_index = 1
+position = Vector2(-132, 1447)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass849" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1806225926]
+z_index = 1
+position = Vector2(-55, 1490)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass850" type="Sprite2D" parent="Stuff_In_Forest" unique_id=312723239]
+z_index = 1
+position = Vector2(11, 1537)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass851" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1145424543]
+z_index = 1
+position = Vector2(81, 1578)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass852" type="Sprite2D" parent="Stuff_In_Forest" unique_id=83951458]
+z_index = 1
+position = Vector2(155, 1618)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass853" type="Sprite2D" parent="Stuff_In_Forest" unique_id=683414931]
+z_index = 1
+position = Vector2(221, 1661)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass854" type="Sprite2D" parent="Stuff_In_Forest" unique_id=157940601]
+z_index = 1
+position = Vector2(279, 1697)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass855" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1181840082]
+z_index = 1
+position = Vector2(351, 1742)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass856" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1462010347]
+z_index = 1
+position = Vector2(419, 1785)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass857" type="Sprite2D" parent="Stuff_In_Forest" unique_id=908282231]
+z_index = 1
+position = Vector2(487, 1831)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass858" type="Sprite2D" parent="Stuff_In_Forest" unique_id=600071030]
+z_index = 1
+position = Vector2(555, 1875)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass859" type="Sprite2D" parent="Stuff_In_Forest" unique_id=274020307]
+z_index = 1
+position = Vector2(623, 1925)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass860" type="Sprite2D" parent="Stuff_In_Forest" unique_id=515481352]
+z_index = 1
+position = Vector2(689, 1976)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass861" type="Sprite2D" parent="Stuff_In_Forest" unique_id=465061542]
+z_index = 1
+position = Vector2(756, 2024)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass862" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1281804127]
+z_index = 1
+position = Vector2(835, 2061)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass863" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1473287464]
+z_index = 1
+position = Vector2(906, 2102)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass864" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1095947039]
+z_index = 1
+position = Vector2(976, 2148)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass865" type="Sprite2D" parent="Stuff_In_Forest" unique_id=149101588]
+z_index = 1
+position = Vector2(1044, 2192)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass866" type="Sprite2D" parent="Stuff_In_Forest" unique_id=679943211]
+z_index = 1
+position = Vector2(1112, 2242)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass867" type="Sprite2D" parent="Stuff_In_Forest" unique_id=205765805]
+z_index = 1
+position = Vector2(1178, 2293)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass868" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1173316922]
+z_index = 1
+position = Vector2(1245, 2346)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass869" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1737292210]
+z_index = 1
+position = Vector2(1317, 2389)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass870" type="Sprite2D" parent="Stuff_In_Forest" unique_id=971803622]
+z_index = 1
+position = Vector2(1388, 2428)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass871" type="Sprite2D" parent="Stuff_In_Forest" unique_id=846953492]
+z_index = 1
+position = Vector2(1456, 2474)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass872" type="Sprite2D" parent="Stuff_In_Forest" unique_id=968870966]
+z_index = 1
+position = Vector2(1524, 2518)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass873" type="Sprite2D" parent="Stuff_In_Forest" unique_id=211820781]
+z_index = 1
+position = Vector2(1592, 2568)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass874" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1464474143]
+z_index = 1
+position = Vector2(1658, 2619)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass875" type="Sprite2D" parent="Stuff_In_Forest" unique_id=143231800]
+z_index = 1
+position = Vector2(1725, 2672)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass876" type="Sprite2D" parent="Stuff_In_Forest" unique_id=180951552]
+z_index = 1
+position = Vector2(1797, 2715)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass877" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1665960885]
+z_index = 1
+position = Vector2(1868, 2754)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass878" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1268502885]
+z_index = 1
+position = Vector2(1936, 2800)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass879" type="Sprite2D" parent="Stuff_In_Forest" unique_id=39369490]
+z_index = 1
+position = Vector2(2004, 2844)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass880" type="Sprite2D" parent="Stuff_In_Forest" unique_id=324082471]
+z_index = 1
+position = Vector2(2072, 2894)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass881" type="Sprite2D" parent="Stuff_In_Forest" unique_id=963733271]
+z_index = 1
+position = Vector2(2138, 2945)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass882" type="Sprite2D" parent="Stuff_In_Forest" unique_id=714348089]
+z_index = 1
+position = Vector2(2205, 2998)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass883" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1921275839]
+z_index = 1
+position = Vector2(2277, 3041)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass884" type="Sprite2D" parent="Stuff_In_Forest" unique_id=199395502]
+position = Vector2(-626, 1149)
+texture = ExtResource("3_30lbi")
+
+[node name="Grass885" type="Sprite2D" parent="Stuff_In_Forest" unique_id=54776530]
+z_index = -1
+position = Vector2(-701, 1105)
+texture = ExtResource("3_30lbi")
+
+[node name="Tree" type="Sprite2D" parent="Stuff_In_Forest" unique_id=272325913]
+z_index = 1
+position = Vector2(200, 498)
+scale = Vector2(3, 3)
+texture = ExtResource("8_uv5p5")
+
+[node name="Tree9" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1959034555]
+z_index = 1
+position = Vector2(449, 702)
+scale = Vector2(3, 3)
+texture = ExtResource("8_uv5p5")
+
+[node name="Tree10" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1277759600]
+z_index = 1
+position = Vector2(847, 696)
+scale = Vector2(3, 3)
+texture = ExtResource("8_uv5p5")
+
+[node name="Tree5" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1919880380]
+z_index = 1
+position = Vector2(535, 1515)
+scale = Vector2(3, 3)
+texture = ExtResource("9_ehxob")
+
+[node name="Tree8" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1237311948]
+z_index = 1
+position = Vector2(170, 1010)
+scale = Vector2(3, 3)
+texture = ExtResource("9_ehxob")
+
+[node name="Tree6" type="Sprite2D" parent="Stuff_In_Forest" unique_id=135733515]
+z_index = 1
+position = Vector2(512, 1191)
+scale = Vector2(3, 3)
+texture = ExtResource("9_ehxob")
+
+[node name="Tree7" type="Sprite2D" parent="Stuff_In_Forest" unique_id=703523672]
+z_index = 1
+position = Vector2(171, 1311)
+scale = Vector2(3, 3)
+texture = ExtResource("9_ehxob")
+
+[node name="Tree2" type="Sprite2D" parent="Stuff_In_Forest" unique_id=852645415]
+z_index = 1
+position = Vector2(-86, 705)
+scale = Vector2(3, 3)
+texture = ExtResource("8_uv5p5")
+
+[node name="Tree3" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1897701298]
+z_index = 1
+position = Vector2(-86, 705)
+scale = Vector2(3, 3)
+texture = ExtResource("8_uv5p5")
+
+[node name="Tree4" type="Sprite2D" parent="Stuff_In_Forest" unique_id=1790336119]
+z_index = 1
+position = Vector2(-181, 1041)
+scale = Vector2(3, 3)
+texture = ExtResource("8_uv5p5")
