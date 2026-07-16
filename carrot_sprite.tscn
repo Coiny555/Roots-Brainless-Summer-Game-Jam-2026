@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://demya0587yc1a"]
+
+[ext_resource type="Texture2D" uid="uid://cchtd4a32cb36" path="res://art_assets/SpritePack_Mixed/Master_SpritePack_Split/Outdoor_Decor_Free.png" id="1_h5m75"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oseuo"]
+atlas = ExtResource("1_h5m75")
+region = Rect2(63.67221, 46.405777, 18.33271, 19.542694)
+
+[node name="TextureRect" type="TextureRect" unique_id=2018687033]
+texture_filter = 1
+offset_left = 22.0
+offset_top = 45.0
+offset_right = 62.0
+offset_bottom = 85.0
+texture = SubResource("AtlasTexture_oseuo")
